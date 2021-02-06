@@ -1,0 +1,29 @@
+<!-- Nav -->
+<nav id="nav">
+    <ul class="container nav-high-width">
+        <li><a href="#top"><img src="/images/md-icon.png" alt="Michael Duhme"></a></li>
+        <li><a href="#resume">{{gettext("Resume")}}</a></li>
+        <li><a href="#projects">{{gettext("Projects")}}</a></li>
+        <li style="flex-grow: 1"></li>
+        <li>
+            <a class="lang-selector" href="/{{lang_dest}}"><i class="icon fas solid fa-globe-europe"></i><span>{{other_lang}}</span></a>
+        </li>
+    </ul>
+    <div class="nav-small-width">
+        <a href="#top"><img src="/images/md-icon.png" alt="Michael Duhme"></a>
+        <div class="lang-selector">{{lang_selector}}</div>
+        <div class="stretch"></div>
+        <a class="lang-selector" href="/{{lang_dest}}"><i class="icon fas solid fa-globe-europe"></i><span>{{other_lang}}</span></a>
+        <div class="menu">
+            <input type="checkbox" id="menu-collapse"/>
+            <label for="menu-collapse">
+                <i class="fas icon solid fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#top">{{gettext("Top")}}</a></li>
+                <li><a href="#resume">{{gettext("Resume")}}</a></li>
+                <li><a href="#projects">{{gettext("Projects")}}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

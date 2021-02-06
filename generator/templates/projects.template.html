@@ -1,0 +1,782 @@
+<!-- Projects -->
+<article id="projects" class="wrapper style3">
+    <div class="container">
+        <header>
+            <h2>{{gettext("Projects")}}</h2>
+            <p><i>{{gettext("Here's some stuff I worked on.")}}</i></p>
+
+            <div id="proj-filter" class="form__group field">
+                <input type="text" class="form__field" placeholder="{{gettext('Filter Keywords ...')}}" name="keywords"
+                       id='keyword-filter' required/>
+                <label for="keyword-filter" class="form__label">{{gettext("Keywords")}}</label>
+            </div>
+        </header>
+        <div>
+            <div class="row proj-box">
+
+                <div class="col-5 col-12-small">
+                    <span class="image featured">
+                        <img class="lazy img-transparent-bg"
+                             data-src="/images/fusion-objective.png"/>
+                    </span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">
+                        Multimodal Action Recognition using Graph Convolutional Neural Networks
+                    </h3>
+                    <h5>{{gettext("Master Thesis")}}</h5>
+                    <div class="proj-mini-desc">
+                        {{gettext('Graph convolutional neural networks are applied in state-of-the-art models for skeleton-based action recognition. The focus of this work is to research the combination of this type of neural network and data from multiple modalities. Using skeletal data as a base for a graph convolutional network model, multiple approaches for fusion of skeleton, RGB and other sensor modalities are proposed. Experiments are conducted on the two multimodal datasets <a href="https://personal.utdallas.edu/~kehtar/UTD-MHAD.html" target="_blank">UTD-MHAD</a> and <a href="https://mmact19.github.io/2019/" target="_blank">MMAct</a> using various graph-like representations of modalities and their fusion at different stages of the neural network architecture.')}}
+                    </div>
+
+                    <div class="proj-additional-content">
+                        <br/>
+                        <div class="image featured image-group">
+                            <img class="lazy"
+                                 data-src="/images/skeleton-imu-nodes-1.png"
+                                 style="width: 47%; height: auto; margin-left: 3%"
+                                 alt=""/>
+                            <img class="lazy"
+                                 data-src="/images/skeleton-imu-nodes-2.png"
+                                 style="width: 47%; height: auto; margin-left: 3%"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            {{gettext("The image shows one of the proposed fusion techniques concerning skeletal data (dark nodes), obtained from OpenPose, Kinect SDK, etc., and signals from accelerometer and gyroscope (red nodes) which are worn by the person performing an action. If both skeleton joints and IMU signals are represented by three-dimensional values (xyz), the skeleton graph can be augmented by simply appending additional nodes representing IMU (or other modalities).")}}
+                        </p>
+                        <p>
+                            {{gettext("Models are implemented and trained using PyTorch 1.6 with Python version 3.8 and CUDA 10.2. All computations and experiments are conducted on a single Nvidia RTX 2080 GPU with 8GB of video memory. To guarantee a deterministic and reproducible behavior, all training procedures are initialized with a fixed random seed.")}}
+                        </p>
+                        <p>
+                            {{gettext("Regarding the skeleton-based approach as the base model, experiments to investigate benefits of multimodal approaches show that multiple fusion methods of skeleton and inertial sensor data achieve better classification accuracies than the base model on UTD-MHAD while a slight decrease in performance is noticeable on MMAct. The approaches for fusion of skeleton and RGB, while experiencing high accuracies on several training runs, similarly show a slight decrease in performance over the base model in the majority of cases.")}}
+                        </p>
+                    </div>
+
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+
+                    <ul class="tags">
+                        <li>Machine Learning</li>
+                        <li>Python</li>
+                        <li>PyTorch</li>
+                        <li>Tensorflow</li>
+                        <li>Action Recognition</li>
+                        <li>Multimodal Learning</li>
+                        <li>Graph Convolutions</li>
+                        <li>Computer Vision</li>
+                        <li>Research</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small">
+                    <span class="image featured">
+                        <img class="lazy better-contrast img-shadow" data-src="/images/people_tracking_following.jpg"/>
+                    </span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">Robbie</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext('During the research internship "Robbie" our team of nine students developed behavior and human-machine interactions for two service robots that are the size of a small human. I was primarily responsible for implementing a robust people following routine for the scenario of carrying groceries or luggage for a human subject. My specific team role was "Quality Management" which involved preparing, supervising and documenting test scenarios according to official tournament rules and ratings as well as introducing and verifying coding guidelines. The project was presented online as part of <a href="https://userpages.uni-koblenz.de/~cvtag/web/alle-demos/taxyeardemos/2020/">CV Tag 2020</a>.')}}
+                    </div>
+                    <div class="proj-additional-content">
+                        <br/>
+                        <p>
+                            {{gettext("People tracking, which is required for following people, is a challenging subject. The task is to identify the same person within an arbitrary number of time-shifted image frames and to prevent a mismatch, that is, recognizing something/someone else as the target. Since this is a visual recognition task, re-identification is further complicated by occlusion (esp. by other people or taking abrupt turns through doors), lighting, video quality and clothes/appearance in combination with viewing a person from different angles. Furthermore, following requires the robot to drive behind the operator at a comfortable distance while avoiding obstacles which inevitably results in it losing its operator.")}}
+                        </p>
+
+                        <p>
+                            {{gettext("Using ROS with C++, two packages <i>people-tracking</i> and <i>people-following</i> are created that communicate with each other. The former is responsible for tracking people between frames based on RGB-D images from Kinect, OpenPose detections and OpenCV. A feature vector is computed for each detection and matched with all existing tracks using Hungarian algorithm. Similarity metrics are euclidean distance of last known positions, euclidean distance of predicted positions using Unscented Kalman Filter, histogram comparison using Bhattacharyya distance, distance of face detection embeddings and an online classifier based on <a href=\"https://www.researchgate.net/publication/325854919_Convolutional_Channel_Features-Based_Person_Identification_for_Person_Following_Robots\">this paper</a> (using features of a person reid neural network forwarded into online AdaBoost). The most reliable method is face detection which is not very useful to re-identify a followed person when the robot drives behind its target. <i>people-following</i> subscribes to the robot's base pose and camera pose and receives tracking data to publish commands that adjust the camera's position, turn the robot or drive to a location.")}}
+                        </p>
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast"
+                                 data-src="/images/people_tracking.jpg"/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            {{gettext("The above picture is produced by the <i>people-tracking</i> package for debugging/visualization purposes.")}}
+                            <ol>
+                                <li>{{gettext("Frame number since tracking started")}}</li>
+                                <li>{{gettext("Person bounding box (blue in tracking-only mode; In following mode: green for followed person, red for everyone else)")}}</li>
+                                <li>{{gettext("Face detection bounding box")}}</li>
+                                <li>{{gettext("Overall weighted matching error (lower is better)")}}</li>
+                                <li>{{gettext("Unweighted matching errors of the mentioned similarity metrics (between 0-best and 1-worst)")}}</li>
+                                <li>{{gettext("Depth-masked person to omit background for histogram comparison")}}</li>
+                                <li>
+                                    {{gettext("Quality of current frame (green: good quality, usable for online learning; red: bad quality due to strong blur or occlusion, do not use to train online classifier)")}}
+                                </li>
+                                <li>{{gettext("Person ID")}}</li>
+                            </ol>
+                        </div>
+
+                        <p>
+                            {{gettext("Here's a video showing people following in action with obstacles and partial occlusion")}}:
+                        </p>
+                        <div>
+                            <video src="/video/following.mp4" poster="/images/following.poster.jpg" controls
+                                   preload="none"></video>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>Robotics</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>ROS</li>
+                        <li>OpenCV</li>
+                        <li>Machine Learning</li>
+                        <li>Person Re-identification</li>
+                        <li>Person Following</li>
+                        <li>Ubuntu</li>
+                        <li>Computer Vision</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small">
+                    <span class="image featured">
+                        <img class="lazy better-contrast img-shadow"
+                             data-src="/images/freskopaint.jpg"
+                             alt=""/>
+                    </span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Edutainment: Fresco Restauration in VR")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("In this VR simulation you take the role of a painter who is tasked to restore a fresco ceiling painting inside a virtual reconstruction of Engers castle's Dianasaal. While playing, the game provides explanations and background to both fresco painting and the painting (named \"Triumpf der Diana\") itself. This project was created in a two-person team over nearly two semesters in Unreal Engine as part of the module Gamedesign/Edutainment. The project was presented as part of <a href=\"https://userpages.uni-koblenz.de/~cvtag/web/alle-demos/taxyeardemos/2019/\">CV Tag 2019</a>.")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        <br/>
+                        <p>
+                            {{gettext("I was responsible to create most of the game's logic, especially the painting system. First, a masked \"destruction\" texture is applied onto the ceiling painting (see mask in left image below). Painting is accomplished by taking a \"brush\" texture and projecting it onto a drawable texture (render target) on the ceiling based on the user's input (click location with mouse or joystick direction in VR). The render target (see right image below) itself is then treated as a mask for the destruction texture.")}}
+                        </p>
+
+
+                        <div class="image featured image-group">
+                            <img class="lazy img-shadow"
+                                 data-src="/images/freskomask.jpg"
+                                 style="width: 47%; height: auto; margin-left: 3%"
+                                 alt=""/>
+                            <img class="lazy img-shadow"
+                                 data-src="/images/freskomaskpaint.jpg"
+                                 style="width: 47%; height: auto; margin-left: 3%"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            {{gettext("painting-stages-desc")}}
+                        </p>
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/freskooverview.jpg"/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            {{gettext('Here\'s a video showing painting the whole region and individual parts in debug mode, that is, using mouse & keyboard instead of VR joysticks <i class="icon solid fa-arrow-right" style="font-size: .7em"></i> janky movements &#x1F642;')}}
+                        </p>
+                        <div>
+                            <video src="/video/fresko.mp4" poster="/images/fresko.poster.jpg" controls
+                                   preload="none"></video>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>Unreal Engine</li>
+                        <li>C++</li>
+                        <li>VR</li>
+                        <li>Game</li>
+                        <li>Edutainment</li>
+                        <li>Simulation</li>
+                        <li>Computer Graphics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/terrainrendering.jpg"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Realtime Terrain Rendering using Quadtree LOD")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("Terrain Rendering implemented using C++, OpenGL and tessellation shaders. A Quadtree deals with the LOD of the terrain and is updated whenever the camera moves. Each quadtree cell and its neighbor information is then passed to the tessellation shader where it is appropriately tessellated based on distance to camera.")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        <p>
+                            {{gettext("This way, using the neighbor information, vertex cracks in the environment between two small squares adjacent to one big square are easily avoided. The vertical displacement is then given by sampling a heightmap. While closing cracks is trivial, one big problem using Quadtrees for LOD is vertex popping when four small squares collapse into one big one and vice versa. Here's a video showing flying through the world with updating LOD:")}}
+                        </p>
+                        <div>
+                            <video src="/video/terrainrendering.mp4" poster="/images/terrainrendering.poster.jpg" controls
+                                   preload="none"></video>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>C++</li>
+                        <li>OpenGL</li>
+                        <li>GLSL</li>
+                        <li>Computer Graphics</li>
+                        <li>Realtime Rendering</li>
+                        <li>Quadtree</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured img-transparent-bg" style="padding: 10px"><img
+                        class="lazy better-contrast"
+                        data-src="/images/puzzle1.png"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Research: Logic Puzzles - The Boy or Girl Paradox")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("The Boy or Girl paradox raises the question about the probability for a random two-child family to have two boys or two girls given some statement about the family or one of the two children. One of the most frequently used statements is about a random two-child family where at least one of the children is a boy and asked for is the probability of them having two boys. When intuitively answering these types of questions, people's opinions about the correct solution and method of achieving said solution differ. When dealing with conditional probabilities, people often apply simple mental models that either lead to a wrong solution or may be correct for a particular problem but don't transfer to other problems.")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        <br>
+                        <h5>{{gettext("Statements 1 and 2")}}</h5>
+                        <ol>
+                            <li>
+                                {{gettext("Mr. Smith has two children. At least one of them is a boy. What is the probability P(BB) that both children are boys? Answer")}}: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/3</span></label>
+                            </li>
+                            <li>
+                                {{gettext("Mr. Jones has two children. The older child is a girl. What is the probability P(GG) that both children are girls? Answer")}}: <label class="spoiler-text"><input type="checkbox"><span>P(GG) = 1/2</span></label>
+                            </li>
+                        </ol>
+
+                        <p>
+                            {{gettext('The statement "at least one boy" implies that the latter of the four possibilities, girl-girl (see image), is unreachable. This leaves three equiprobable cases, one of which corresponds to the target scenario, i.e., the probability of having two boys. As for statement 2, two of the four cases are unreachable and so the resulting probability is 1/2. However, the first statement is ambiguous and, depending on context and background information, the answer could also be 1/2. The change in outcome is subject to the way in which the information "at least one of them is a boy" is obtained.')}}
+                        </p>
+
+                        <h5>{{gettext("Statements 3 and 4")}}</h5>
+                        <ol start="3">
+                            <li>
+                                {{gettext("Mr. Smith is the father of two. We meet him walking on the street with a young boy whom he proudly introduces as his son. What is the probability that Mr. Smith's other child is also a boy? Answer")}}: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/2</span></label>
+                            </li>
+                            <li>
+                                {{gettext("We meet Mr. Smith (whom we know to be the father of two) in the street with a boy. This time, he is more elaborate in his introduction, presenting the boy as his eldest child. What is the probability that Mr. Smith's other child is also a boy? Answer")}}: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/2</span></label>
+                            </li>
+                        </ol>
+
+                        <p>
+                            {{gettext("Contrary to what one intuitively believes when comparing statements 3 and 4 to statements 1 and 2, the solution to both statement 3 and statement 4 is identical, that is, P(BB) = 1/2. The relevant information is the observation that we meet the son on a walk with his father. Like the attributes <i>older</i> and <i>younger</i> child, this creates a notion of <i>child on a walk</i> and <i>child not on a walk</i>. The following figure shows all combinations and unreachable ones.")}}
+                        </p>
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow" style="width: 50%; height: auto"
+                                 data-src="/images/puzzle3.png"/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>Research</li>
+                        <li>Logic</li>
+                        <li>Probability</li>
+                        <li>Reasoning</li>
+                        <li>AI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/sampling.png"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Research: BRDF Importance Sampling")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext('The <a href="https://en.wikipedia.org/wiki/Rendering_equation">rendering equation</a> can be approximated using Monte Carlo Integration (MCI) with N samples and a probability density function (PDF) that defines the distribution of incident light directions. Assuming the PDF corresponds to a uniform distribution, the incident light ray has equal probability to come from any direction. This results in a large variance for MCI and would be inefficient for strongly reflective surfaces.')}}
+                    </div>
+                    <div class="proj-additional-content">
+                        {{gettext("Because convergence to a correct solution is <code>O(n<sup>-1/2</sup>)</code>, halving the approximation error requires four times the amount of samples. Importance Sampling is a technique to pick samples from distributions that reduce variance for MCI and, with that, reduce noise in the rendered image. The figure shows uniform sampling (left) and cosine-weighted sampling (right).")}}
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>Research</li>
+                        <li>Computer Graphics</li>
+                        <li>Physically Based Rendering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small">
+                    <span class="image featured">
+                    <video class="img-shadow" src="/video/jplearnerapp.mp4" poster="/images/jplearnerapp.poster.jpg"
+                           controls
+                           preload="none"></video>
+                </span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Japanese-English Offline Dictionary and Learning App (WIP)")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("A Japanese-English offline dictionary and learning app built using C# WPF and the dictionaries JMdict end JMNedict. To achieve very quick response times, a Lucene search database is created from these dictionaries. Antlr is used to create a domain specific language for the search queries inside the app. The dictionary is still incomplete and the learning part (planned like Anki but more interactive) not started.")}}
+                    </div>
+                    <ul class="tags">
+                        <li>C#</li>
+                        <li>WPF</li>
+                        <li>Lucene</li>
+                        <li>Antlr</li>
+                        <li>Learning</li>
+                        <li>Edutainment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small">
+                    <span class="image featured">
+                    <video class="img-shadow" src="/video/dockgrid.mp4" poster="/images/dockgrid.poster.jpg" controls
+                           preload="none"></video>
+                </span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">Dockgrid</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("A collection of WPF GUI elements, mainly a tab panel with attachable, detachable and arbitrarily organizable tabs. Also included are UI elements like color and brush picker that are, for example, bound to and directly modify a WPF Color or SolidColorBrush object.")}}
+                    </div>
+                    <ul class="tags">
+                        <li>C#</li>
+                        <li>WPF</li>
+                        <li>GUI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/multidraw.jpg"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">Thesis: Strategien zur Reduktion von Zustandswechseln in modernen
+                        OpenGL-Computergrafik-Architekturen in Java</h3>
+                    <h5>{{gettext("Bachelor Thesis")}}</h5>
+                    <div class="proj-mini-desc">
+                        {{gettext("For my bachelor thesis I developed a mini realtime graphics engine using only OpenGL and Java (JOGL). Since OpenGL is a state machine the goal was to create an efficient architecture and implement techniques to reduce the number of state changes. The architecture is based on the Entity–component–system architectural pattern, similar to Unity Engine.")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        {{gettext("bachelor-thesis-desc-2")}}
+
+                        <div class="image featured">
+                            <img class="lazy img-shadow"
+                                 data-src="images/uml1.jpg"
+                                 alt=""/>
+                            <img class="lazy img-shadow"
+                                 data-src="images/uml2.jpg"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>OpenGL</li>
+                        <li>GLSL</li>
+                        <li>Java</li>
+                        <li>Computer Graphics</li>
+                        <li>Realtime Rendering</li>
+                        <li>Software Architecture</li>
+                        <li>Research</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/fouriervr3.jpg"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("3D Simulation and Manipulation of Signal Representations and their Fourier Transformation in VR")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("In a two-person team we created a VR-simulation in Unity Engine that lets you modify images using a variety of different brushes and observe their changes influence the magnitude image of its Fourier transformation (or vice versa). I was mainly responsible for rendering and updating the images in realtime, implementing 2D-FFT as a C++ plugin for Unity and create the advisory screen using a HTML5 renderer for Unity.")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        <p>
+                            {{gettext("The image (grayscale only) itself is rendered as a 3D-representation with the pixel intensity being the vertical displacement. For performance reasons, the 3D image is not made up of individual cuboid entities but instead a single mesh that is generated on the fly. The user selects a brush (e.g., 5x5 brush illustrated by green area in image) and applies it by pointing on the image (ray gets projected onto mesh to determine area of input) and then dragging up or down to modify the intensity of the pixel area.")}}
+                        </p>
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/fouriervr_image3d.jpg"
+                                 style="width: 47%; height: auto; margin-right: 3%"
+                                 alt=""/>
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/fouriervr_fft3d.jpg"
+                                 style="width: 47%; height: auto; margin-left: 3%"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/fouriervr2.jpg"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>Unity Engine</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>VR</li>
+                        <li>Computer Graphics</li>
+                        <li>Computer Vision</li>
+                        <li>Simulation</li>
+                        <li>Edutainment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/puzzlebox.jpg"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Puzzle Box in OpenGL")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("My first project using OpenGL (with perspective camera, lighting and animations) in Java (LWJGL) was about creating a puzzle game where you could use any of your own pictures to puzzle. Additionally, the user can choose from a variety of different filters that are applied to the image, such as painting filter (using binning/thresholding in HSV color space) or drawing filter (using sobel edges).")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        {{gettext("The user is able to drag and drop the individual puzzle parts. Correctness of a placed part is communicated with an appropriate sound. Here's an image showing the painting filter:")}}
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/puzzlebox2.jpg"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>OpenGL</li>
+                        <li>Java</li>
+                        <li>GLSL</li>
+                        <li>Computer Graphics</li>
+                        <li>Computer Vision</li>
+                        <li>Game</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/tmpc.jpg"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">The Mighty Picture Challenge</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext('In this web design group project we created a social network where users can start challenges to upload pictures of a specific theme (e.g., nature, food) and type (e.g., photography, drawing, screenshot). Users can either join the challenge or comment and vote on their favorite picture. I was mainly responsible for backend programming and front end pages for user registration, login and profile. Sample image from <a href="https://www.publicdomainpictures.net">https://www.publicdomainpictures.net</a>.')}}
+                    </div>
+                    <ul class="tags">
+                        <li>Web Development</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>Social Network</li>
+                        <li>GUI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row col-12 proj-box">
+                <div class="col-5 col-12-small"><span class="image featured"><img
+                        class="lazy better-contrast img-shadow"
+                        data-src="/images/carnival_panoramal.jpg"
+                        alt=""/></span>
+                </div>
+                <div class="col-7 col-12-small">
+                    <h3 class="proj-expand">{{gettext("Some Older & Small-scale Projects")}}</h3>
+                    <div class="proj-mini-desc">
+                        {{gettext("Some smaller and first programming projects that were part of my undergraduate curriculum.")}}
+                    </div>
+                    <div class="proj-additional-content">
+                        <br>
+
+                        <h4>{{gettext("Modelling and Rendering of a Festival / Circus World in Autodesk Maya 2016")}}</h4>
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/carnival_work1.jpg"
+                                 style="width: 47%; height: auto; margin-right: 3%"
+                                 alt=""/>
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/carnival_work2.jpg"
+                                 style="width: 47%; height: auto; margin-left: 3%"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/carnival_render3.png"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/carnival_render5.png"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <h4>{{gettext("Photo Viewer with Social Media and Cloud Synchronization built in JavaFX")}}</h4>
+
+                        {{gettext("Synchronization only implemented for Flickr since it provided the least restricted API without paid access.")}}
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/photoviewer.jpg"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <h4>{{gettext("Re-creation of a World Heritage Site using Shapes in Adobe Illustrator")}}</h4>
+
+                        {{gettext("Building: Alatornio Church<br> Lots of trees in the background are missing &#x1F642;")}}
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/weltkulturerbe.png"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4>MoleSmash</h4>
+
+                        {{gettext("My first group programming project ever is a whack-a-mole game built in Java Swing. It doesn't look pretty but it works &#128521;")}}
+
+                        <div class="image featured image-group">
+                            <img class="lazy better-contrast img-shadow"
+                                 data-src="/images/molesmash.png"
+                                 alt=""/>
+                            <div class="spinner-container">
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proj-view-more proj-expand">
+                        <i class="fas icon solid fa-caret-down"></i>
+                    </div>
+                    <ul class="tags">
+                        <li>Modelling</li>
+                        <li>Design</li>
+                        <li>Java</li>
+                        <li>Maya</li>
+                        <li>GUI</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <a href="mailto:m.duhme@mailbox.org" class="button large scrolly">{{gettext("Get in touch with me")}}</a>
+        </footer>
+    </div>
+</article>

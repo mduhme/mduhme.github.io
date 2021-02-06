@@ -1,0 +1,11 @@
+.idea/
+venv/
+tools/
+Adobe Premiere Pro Auto-Save/
+
+*.mo
+*.bat
+*.ai
+*.psd
+*.prproj
+*.original.*

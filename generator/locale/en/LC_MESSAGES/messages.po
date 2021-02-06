@@ -1,0 +1,792 @@
+# English translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-02-03 18:52+0100\n"
+"PO-Revision-Date: 2021-02-02 21:13+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: templates/footer.template.html:7
+msgid "Based on"
+msgstr ""
+
+#: templates/home.template.html:10
+msgid "Hi. I'm"
+msgstr ""
+
+#: templates/home.template.html:13
+msgid "description"
+msgstr ""
+"I am currently finishing my <a class=\"scrolly\" "
+"href=\"#projects\">master thesis</a> in Computational Visualistics at the"
+" University of Koblenz.<br> During my studies, I acquired knowledge in "
+"the fields of <strong>computer vision</strong>, <strong>machine "
+"learning</strong>, <strong>robotics</strong> and <strong>computer "
+"graphics</strong>.<br>I especially enjoy working with "
+"<strong>Python</strong> and <strong>modern C++</strong> and am familiar "
+"with various tools and frameworks, such as <strong>Unreal "
+"Engine</strong>, <strong>ROS</strong> or <strong>PyTorch</strong>."
+
+#: templates/home.template.html:17
+msgid "Feel free to contact me"
+msgstr ""
+
+#: templates/home.template.html:28
+msgid "My Resume"
+msgstr ""
+
+#: templates/home.template.html:29
+msgid "My Projects"
+msgstr ""
+
+#: templates/nav.template.html:5 templates/nav.template.html:19
+#: templates/resume.template.html:5
+msgid "Resume"
+msgstr ""
+
+#: templates/nav.template.html:6 templates/nav.template.html:20
+#: templates/projects.template.html:5
+msgid "Projects"
+msgstr ""
+
+#: templates/nav.template.html:7
+msgid "Contact"
+msgstr ""
+
+#: templates/nav.template.html:18
+msgid "Top"
+msgstr ""
+
+#: templates/projects.template.html:6
+msgid "Here's some stuff I worked on."
+msgstr ""
+
+#: templates/projects.template.html:9
+msgid "Filter Keywords ..."
+msgstr ""
+
+#: templates/projects.template.html:11
+msgid "Keywords"
+msgstr ""
+
+#: templates/projects.template.html:27
+msgid "Master Thesis"
+msgstr ""
+
+#: templates/projects.template.html:29
+msgid ""
+"Graph convolutional neural networks are applied in state-of-the-art "
+"models for skeleton-based action recognition. The focus of this work is "
+"to research the combination of this type of neural network and data from "
+"multiple modalities. Using skeletal data as a base for a graph "
+"convolutional network model, multiple approaches for fusion of skeleton, "
+"RGB and other sensor modalities are proposed. Experiments are conducted "
+"on the two multimodal datasets <a "
+"href=\"https://personal.utdallas.edu/~kehtar/UTD-MHAD.html\" "
+"target=\"_blank\">UTD-MHAD</a> and <a "
+"href=\"https://mmact19.github.io/2019/\" target=\"_blank\">MMAct</a> "
+"using various graph-like representations of modalities and their fusion "
+"at different stages of the neural network architecture."
+msgstr ""
+
+#: templates/projects.template.html:57
+msgid ""
+"The image shows one of the proposed fusion techniques concerning skeletal"
+" data (dark nodes), obtained from OpenPose, Kinect SDK, etc., and signals"
+" from accelerometer and gyroscope (red nodes) which are worn by the "
+"person performing an action. If both skeleton joints and IMU signals are "
+"represented by three-dimensional values (xyz), the skeleton graph can be "
+"augmented by simply appending additional nodes representing IMU (or other"
+" modalities)."
+msgstr ""
+
+#: templates/projects.template.html:60
+msgid ""
+"Models are implemented and trained using PyTorch 1.6 with Python version "
+"3.8 and CUDA 10.2. All computations and experiments are conducted on a "
+"single Nvidia RTX 2080 GPU with 8GB of video memory. To guarantee a "
+"deterministic and reproducible behavior, all training procedures are "
+"initialized with a fixed random seed."
+msgstr ""
+
+#: templates/projects.template.html:63
+msgid ""
+"Regarding the skeleton-based approach as the base model, experiments to "
+"investigate benefits of multimodal approaches show that multiple fusion "
+"methods of skeleton and inertial sensor data achieve better "
+"classification accuracies than the base model on UTD-MHAD while a slight "
+"decrease in performance is noticeable on MMAct. The approaches for fusion"
+" of skeleton and RGB, while experiencing high accuracies on several "
+"training runs, similarly show a slight decrease in performance over the "
+"base model in the majority of cases."
+msgstr ""
+
+#: templates/projects.template.html:94
+msgid ""
+"During the research internship \"Robbie\" our team of nine students "
+"developed behavior and human-machine interactions for two service robots "
+"that are the size of a small human. I was primarily responsible for "
+"implementing a robust people following routine for the scenario of "
+"carrying groceries or luggage for a human subject. My specific team role "
+"was \"Quality Management\" which involved preparing, supervising and "
+"documenting test scenarios according to official tournament rules and "
+"ratings as well as introducing and verifying coding guidelines. The "
+"project was presented online as part of <a href=\"https://userpages.uni-"
+"koblenz.de/~cvtag/web/alle-demos/taxyeardemos/2020/\">CV Tag 2020</a>."
+msgstr ""
+
+#: templates/projects.template.html:99
+msgid ""
+"People tracking, which is required for following people, is a challenging"
+" subject. The task is to identify the same person within an arbitrary "
+"number of time-shifted image frames and to prevent a mismatch, that is, "
+"recognizing something/someone else as the target. Since this is a visual "
+"recognition task, re-identification is further complicated by occlusion "
+"(esp. by other people or taking abrupt turns through doors), lighting, "
+"video quality and clothes/appearance in combination with viewing a person"
+" from different angles. Furthermore, following requires the robot to "
+"drive behind the operator at a comfortable distance while avoiding "
+"obstacles which inevitably results in it losing its operator."
+msgstr ""
+
+#: templates/projects.template.html:103
+msgid ""
+"Using ROS with C++, two packages <i>people-tracking</i> and <i>people-"
+"following</i> are created that communicate with each other. The former is"
+" responsible for tracking people between frames based on RGB-D images "
+"from Kinect, OpenPose detections and OpenCV. A feature vector is computed"
+" for each detection and matched with all existing tracks using Hungarian "
+"algorithm. Similarity metrics are euclidean distance of last known "
+"positions, euclidean distance of predicted positions using Unscented "
+"Kalman Filter, histogram comparison using Bhattacharyya distance, "
+"distance of face detection embeddings and an online classifier based on "
+"<a href=\"https://www.researchgate.net/publication"
+"/325854919_Convolutional_Channel_Features-"
+"Based_Person_Identification_for_Person_Following_Robots\">this paper</a> "
+"(using features of a person reid neural network forwarded into online "
+"AdaBoost). The most reliable method is face detection which is not very "
+"useful to re-identify a followed person when the robot drives behind its "
+"target. <i>people-following</i> subscribes to the robot's base pose and "
+"camera pose and receives tracking data to publish commands that adjust "
+"the camera's position, turn the robot or drive to a location."
+msgstr ""
+
+#: templates/projects.template.html:124
+msgid ""
+"The above picture is produced by the <i>people-tracking</i> package for "
+"debugging/visualization purposes."
+msgstr ""
+
+#: templates/projects.template.html:126
+msgid "Frame number since tracking started"
+msgstr ""
+
+#: templates/projects.template.html:127
+msgid ""
+"Person bounding box (blue in tracking-only mode; In following mode: green"
+" for followed person, red for everyone else)"
+msgstr ""
+
+#: templates/projects.template.html:128
+msgid "Face detection bounding box"
+msgstr ""
+
+#: templates/projects.template.html:129
+msgid "Overall weighted matching error (lower is better)"
+msgstr ""
+
+#: templates/projects.template.html:130
+msgid ""
+"Unweighted matching errors of the mentioned similarity metrics (between "
+"0-best and 1-worst)"
+msgstr ""
+
+#: templates/projects.template.html:131
+msgid "Depth-masked person to omit background for histogram comparison"
+msgstr ""
+
+#: templates/projects.template.html:133
+msgid ""
+"Quality of current frame (green: good quality, usable for online "
+"learning; red: bad quality due to strong blur or occlusion, do not use to"
+" train online classifier)"
+msgstr ""
+
+#: templates/projects.template.html:135
+msgid "Person ID"
+msgstr ""
+
+#: templates/projects.template.html:140
+msgid ""
+"Here's a video showing people following in action with obstacles and "
+"partial occlusion"
+msgstr ""
+
+#: templates/projects.template.html:174
+msgid "Edutainment: Fresco Restauration in VR"
+msgstr ""
+
+#: templates/projects.template.html:176
+msgid ""
+"In this VR simulation you take the role of a painter who is tasked to "
+"restore a fresco ceiling painting inside a virtual reconstruction of "
+"Engers castle's Dianasaal. While playing, the game provides explanations "
+"and background to both fresco painting and the painting (named \"Triumpf "
+"der Diana\") itself. This project was created in a two-person team over "
+"nearly two semesters in Unreal Engine as part of the module "
+"Gamedesign/Edutainment. The project was presented as part of <a "
+"href=\"https://userpages.uni-koblenz.de/~cvtag/web/alle-"
+"demos/taxyeardemos/2019/\">CV Tag 2019</a>."
+msgstr ""
+
+#: templates/projects.template.html:181
+msgid ""
+"I was responsible to create most of the game's logic, especially the "
+"painting system. First, a masked \"destruction\" texture is applied onto "
+"the ceiling painting (see mask in left image below). Painting is "
+"accomplished by taking a \"brush\" texture and projecting it onto a "
+"drawable texture (render target) on the ceiling based on the user's input"
+" (click location with mouse or joystick direction in VR). The render "
+"target (see right image below) itself is then treated as a mask for the "
+"destruction texture."
+msgstr ""
+
+#: templates/projects.template.html:209
+msgid "painting-stages-desc"
+msgstr ""
+"Reconstruction of the painting is divided into two stages. For a fresco, "
+"the first step is to apply multiple layers of wet lime plaster that need "
+"to dry. However, for this game, only a single layer needs to be applied "
+"without waiting for it to dry &#128521;.<br> The second stage involves "
+"re-coloring the painting in a \"color by numbers\"-like manner. This "
+"time, a render target (mask) is required for each of the fields that are "
+"able to be filled with color. To prevent pixel-precise accuracy for "
+"completing the painting, a C++ script is used to check whether a mask is "
+"\"fully colored\" by introducing a threshold, e.g., 80% of the pixels "
+"need to be filled for the painting to be considered complete."
+
+#: templates/projects.template.html:230
+msgid ""
+"Here's a video showing painting the whole region and individual parts in "
+"debug mode, that is, using mouse & keyboard instead of VR joysticks <i "
+"class=\"icon solid fa-arrow-right\" style=\"font-size: .7em\"></i> janky "
+"movements &#x1F642;"
+msgstr ""
+
+#: templates/projects.template.html:259
+msgid "Realtime Terrain Rendering using Quadtree LOD"
+msgstr ""
+
+#: templates/projects.template.html:261
+msgid ""
+"Terrain Rendering implemented using C++, OpenGL and tessellation shaders."
+" A Quadtree deals with the LOD of the terrain and is updated whenever the"
+" camera moves. Each quadtree cell and its neighbor information is then "
+"passed to the tessellation shader where it is appropriately tessellated "
+"based on distance to camera."
+msgstr ""
+
+#: templates/projects.template.html:265
+msgid ""
+"This way, using the neighbor information, vertex cracks in the "
+"environment between two small squares adjacent to one big square are "
+"easily avoided. The vertical displacement is then given by sampling a "
+"heightmap. While closing cracks is trivial, one big problem using "
+"Quadtrees for LOD is vertex popping when four small squares collapse into"
+" one big one and vice versa. Here's a video showing flying through the "
+"world with updating LOD:"
+msgstr ""
+
+#: templates/projects.template.html:293
+msgid "Research: Logic Puzzles - The Boy or Girl Paradox"
+msgstr ""
+
+#: templates/projects.template.html:295
+msgid ""
+"The Boy or Girl paradox raises the question about the probability for a "
+"random two-child family to have two boys or two girls given some "
+"statement about the family or one of the two children. One of the most "
+"frequently used statements is about a random two-child family where at "
+"least one of the children is a boy and asked for is the probability of "
+"them having two boys. When intuitively answering these types of "
+"questions, people's opinions about the correct solution and method of "
+"achieving said solution differ. When dealing with conditional "
+"probabilities, people often apply simple mental models that either lead "
+"to a wrong solution or may be correct for a particular problem but don't "
+"transfer to other problems."
+msgstr ""
+
+#: templates/projects.template.html:299
+msgid "Statements 1 and 2"
+msgstr ""
+
+#: templates/projects.template.html:302
+msgid ""
+"Mr. Smith has two children. At least one of them is a boy. What is the "
+"probability P(BB) that both children are boys? Answer"
+msgstr ""
+
+#: templates/projects.template.html:305
+msgid ""
+"Mr. Jones has two children. The older child is a girl. What is the "
+"probability P(GG) that both children are girls? Answer"
+msgstr ""
+
+#: templates/projects.template.html:310
+msgid ""
+"The statement \"at least one boy\" implies that the latter of the four "
+"possibilities, girl-girl (see image), is unreachable. This leaves three "
+"equiprobable cases, one of which corresponds to the target scenario, "
+"i.e., the probability of having two boys. As for statement 2, two of the "
+"four cases are unreachable and so the resulting probability is 1/2. "
+"However, the first statement is ambiguous and, depending on context and "
+"background information, the answer could also be 1/2. The change in "
+"outcome is subject to the way in which the information \"at least one of "
+"them is a boy\" is obtained."
+msgstr ""
+
+#: templates/projects.template.html:313
+msgid "Statements 3 and 4"
+msgstr ""
+
+#: templates/projects.template.html:316
+msgid ""
+"Mr. Smith is the father of two. We meet him walking on the street with a "
+"young boy whom he proudly introduces as his son. What is the probability "
+"that Mr. Smith's other child is also a boy? Answer"
+msgstr ""
+
+#: templates/projects.template.html:319
+msgid ""
+"We meet Mr. Smith (whom we know to be the father of two) in the street "
+"with a boy. This time, he is more elaborate in his introduction, "
+"presenting the boy as his eldest child. What is the probability that Mr. "
+"Smith's other child is also a boy? Answer"
+msgstr ""
+
+#: templates/projects.template.html:324
+msgid ""
+"Contrary to what one intuitively believes when comparing statements 3 and"
+" 4 to statements 1 and 2, the solution to both statement 3 and statement "
+"4 is identical, that is, P(BB) = 1/2. The relevant information is the "
+"observation that we meet the son on a walk with his father. Like the "
+"attributes <i>older</i> and <i>younger</i> child, this creates a notion "
+"of <i>child on a walk</i> and <i>child not on a walk</i>. The following "
+"figure shows all combinations and unreachable ones."
+msgstr ""
+
+#: templates/projects.template.html:363
+msgid "Research: BRDF Importance Sampling"
+msgstr ""
+
+#: templates/projects.template.html:365
+msgid ""
+"The <a "
+"href=\"https://en.wikipedia.org/wiki/Rendering_equation\">rendering "
+"equation</a> can be approximated using Monte Carlo Integration (MCI) with"
+" N samples and a probability density function (PDF) that defines the "
+"distribution of incident light directions. Assuming the PDF corresponds "
+"to a uniform distribution, the incident light ray has equal probability "
+"to come from any direction. This results in a large variance for MCI and "
+"would be inefficient for strongly reflective surfaces."
+msgstr ""
+
+#: templates/projects.template.html:368
+msgid ""
+"Because convergence to a correct solution is "
+"<code>O(n<sup>-1/2</sup>)</code>, halving the approximation error "
+"requires four times the amount of samples. Importance Sampling is a "
+"technique to pick samples from distributions that reduce variance for MCI"
+" and, with that, reduce noise in the rendered image. The figure shows "
+"uniform sampling (left) and cosine-weighted sampling (right)."
+msgstr ""
+
+#: templates/projects.template.html:390
+msgid "Japanese-English Offline Dictionary and Learning App (WIP)"
+msgstr ""
+
+#: templates/projects.template.html:392
+msgid ""
+"A Japanese-English offline dictionary and learning app built using C# WPF"
+" and the dictionaries JMdict end JMNedict. To achieve very quick response"
+" times, a Lucene search database is created from these dictionaries. "
+"Antlr is used to create a domain specific language for the search queries"
+" inside the app. The dictionary is still incomplete and the learning part"
+" (planned like Anki but more interactive) not started."
+msgstr ""
+
+#: templates/projects.template.html:415
+msgid ""
+"A collection of WPF GUI elements, mainly a tab panel with attachable, "
+"detachable and arbitrarily organizable tabs. Also included are UI "
+"elements like color and brush picker that are, for example, bound to and "
+"directly modify a WPF Color or SolidColorBrush object."
+msgstr ""
+
+#: templates/projects.template.html:434
+msgid "Bachelor Thesis"
+msgstr ""
+
+#: templates/projects.template.html:436
+msgid ""
+"For my bachelor thesis I developed a mini realtime graphics engine using "
+"only OpenGL and Java (JOGL). Since OpenGL is a state machine the goal was"
+" to create an efficient architecture and implement techniques to reduce "
+"the number of state changes. The architecture is based on the "
+"Entity–component–system architectural pattern, similar to Unity Engine."
+msgstr ""
+
+#: templates/projects.template.html:439
+msgid "bachelor-thesis-desc-2"
+msgstr ""
+"A naive approach for rendering geometrical objects in OpenGL is "
+"traversing a list and changing state and parameters for every object "
+"encountered in that list. This turns out to be ineffective, resulting in "
+"hotspots at OpenGL functions which require more than 50% of the "
+"application's available time, leaving less time for other subsystems of a"
+" graphics engine. Multiple techniques are considered and their change "
+"performance evaluated: frustum culling, spatial data structures, "
+"automated batching of similar objects + multi draws, component sorting, "
+"dirty flags to avoid re-computation of unchanged values."
+
+#: templates/projects.template.html:485
+msgid ""
+"3D Simulation and Manipulation of Signal Representations and their "
+"Fourier Transformation in VR"
+msgstr ""
+
+#: templates/projects.template.html:487
+msgid ""
+"In a two-person team we created a VR-simulation in Unity Engine that lets"
+" you modify images using a variety of different brushes and observe their"
+" changes influence the magnitude image of its Fourier transformation (or "
+"vice versa). I was mainly responsible for rendering and updating the "
+"images in realtime, implementing 2D-FFT as a C++ plugin for Unity and "
+"create the advisory screen using a HTML5 renderer for Unity."
+msgstr ""
+
+#: templates/projects.template.html:491
+msgid ""
+"The image (grayscale only) itself is rendered as a 3D-representation with"
+" the pixel intensity being the vertical displacement. For performance "
+"reasons, the 3D image is not made up of individual cuboid entities but "
+"instead a single mesh that is generated on the fly. The user selects a "
+"brush (e.g., 5x5 brush illustrated by green area in image) and applies it"
+" by pointing on the image (ray gets projected onto mesh to determine area"
+" of input) and then dragging up or down to modify the intensity of the "
+"pixel area."
+msgstr ""
+
+#: templates/projects.template.html:557
+msgid "Puzzle Box in OpenGL"
+msgstr ""
+
+#: templates/projects.template.html:559
+msgid ""
+"My first project using OpenGL (with perspective camera, lighting and "
+"animations) in Java (LWJGL) was about creating a puzzle game where you "
+"could use any of your own pictures to puzzle. Additionally, the user can "
+"choose from a variety of different filters that are applied to the image,"
+" such as painting filter (using binning/thresholding in HSV color space) "
+"or drawing filter (using sobel edges)."
+msgstr ""
+
+#: templates/projects.template.html:562
+msgid ""
+"The user is able to drag and drop the individual puzzle parts. "
+"Correctness of a placed part is communicated with an appropriate sound. "
+"Here's an image showing the painting filter:"
+msgstr ""
+
+#: templates/projects.template.html:605
+msgid ""
+"In this web design group project we created a social network where users "
+"can start challenges to upload pictures of a specific theme (e.g., "
+"nature, food) and type (e.g., photography, drawing, screenshot). Users "
+"can either join the challenge or comment and vote on their favorite "
+"picture. I was mainly responsible for backend programming and front end "
+"pages for user registration, login and profile. Sample image from <a "
+"href=\"https://www.publicdomainpictures.net\">https://www.publicdomainpictures.net</a>."
+msgstr ""
+
+#: templates/projects.template.html:626
+msgid "Some Older & Small-scale Projects"
+msgstr ""
+
+#: templates/projects.template.html:628
+msgid ""
+"Some smaller and first programming projects that were part of my "
+"undergraduate curriculum."
+msgstr ""
+
+#: templates/projects.template.html:633
+msgid "Modelling and Rendering of a Festival / Circus World in Autodesk Maya 2016"
+msgstr ""
+
+#: templates/projects.template.html:695
+msgid "Photo Viewer with Social Media and Cloud Synchronization built in JavaFX"
+msgstr ""
+
+#: templates/projects.template.html:697
+msgid ""
+"Synchronization only implemented for Flickr since it provided the least "
+"restricted API without paid access."
+msgstr ""
+
+#: templates/projects.template.html:718
+msgid "Re-creation of a World Heritage Site using Shapes in Adobe Illustrator"
+msgstr ""
+
+#: templates/projects.template.html:720
+msgid ""
+"Building: Alatornio Church<br> Lots of trees in the background are "
+"missing &#x1F642;"
+msgstr ""
+
+#: templates/projects.template.html:742
+msgid ""
+"My first group programming project ever is a whack-a-mole game built in "
+"Java Swing. It doesn't look pretty but it works &#128521;"
+msgstr ""
+
+#: templates/projects.template.html:779
+msgid "Get in touch with me"
+msgstr ""
+
+#: templates/resume.template.html:6
+msgid "The places I worked and studied at."
+msgstr ""
+
+#: templates/resume.template.html:10
+msgid "Education"
+msgstr ""
+
+#: templates/resume.template.html:14
+msgid "Computational Visualistics"
+msgstr ""
+
+#: templates/resume.template.html:17 templates/resume.template.html:80
+msgid "University of Koblenz"
+msgstr ""
+
+#: templates/resume.template.html:23
+msgid "Robotics"
+msgstr ""
+
+#: templates/resume.template.html:23
+msgid "Operating Systems"
+msgstr ""
+
+#: templates/resume.template.html:26
+msgid "Programming languages"
+msgstr ""
+
+#: templates/resume.template.html:35
+msgid "Computational Visualistics and Design"
+msgstr ""
+
+#: templates/resume.template.html:37
+msgid "Oct. 2013 - Oct. 2017"
+msgstr ""
+
+#: templates/resume.template.html:38
+msgid "Hamm-Lippstadt University of Applied Sciences"
+msgstr ""
+
+#: templates/resume.template.html:47
+msgid ""
+"Foundations of Computer science (algorithms, data structures, software "
+"design patterns), computer vision and computer graphics"
+msgstr ""
+
+#: templates/resume.template.html:49
+msgid "ergonomics"
+msgstr ""
+
+#: templates/resume.template.html:49
+msgid "web design"
+msgstr ""
+
+#: templates/resume.template.html:52
+msgid "Main programming language"
+msgstr ""
+
+#: templates/resume.template.html:61
+msgid "abitur-desc"
+msgstr "<span style=\"font-weight: lighter\"> (high school diploma)</span>"
+
+#: templates/resume.template.html:73
+msgid "Internships"
+msgstr ""
+
+#: templates/resume.template.html:86
+msgid ""
+"Work on two much-rewarded service robots as part of a research internship"
+" in a team of nine students and two research assistants."
+msgstr ""
+
+#: templates/resume.template.html:89
+msgid ""
+"Implementation of human-robot-interactions in the context of home "
+"assistance, such as people tracking & following and item retrieval, "
+"carrying and handover, in preparation for RoboCup German Open and RoboCup"
+" World Championship (sadly both cancelled)"
+msgstr ""
+
+#: templates/resume.template.html:92
+msgid "Special team role: Quality Management"
+msgstr ""
+
+#: templates/resume.template.html:94
+msgid "Verification of compliance of coding standards and style guides"
+msgstr ""
+
+#: templates/resume.template.html:95
+msgid "Writing of documentations"
+msgstr ""
+
+#: templates/resume.template.html:97
+msgid ""
+"Conduction and supervision of tests according to official tournament "
+"rules and ratings"
+msgstr ""
+
+#: templates/resume.template.html:111
+msgid ""
+"Development of a mockup / prototype for a driver assistance / "
+"recommendation system"
+msgstr ""
+
+#: templates/resume.template.html:112
+msgid ""
+"Work with C++ and Bash-Shell on Ubuntu, compilation for target "
+"infotainment system hardware"
+msgstr ""
+
+#: templates/resume.template.html:113
+msgid "Git, Jira for version control, project management"
+msgstr ""
+
+#: templates/resume.template.html:114
+msgid "Close coordination with team in India"
+msgstr ""
+
+#: templates/resume.template.html:115
+msgid "Setup and assistance at exhibitions"
+msgstr ""
+
+#: templates/resume.template.html:116
+msgid "Daily stand-up meetings in small team to discuss progress"
+msgstr ""
+
+#: templates/resume.template.html:123
+msgid "Skills"
+msgstr ""
+
+#: templates/resume.template.html:127
+msgid "Most used programming languages / technologies"
+msgstr ""
+
+#: templates/resume.template.html:132
+msgid "incl. and preferably modern C++ 17 and 20"
+msgstr ""
+
+#: templates/resume.template.html:142
+msgid "Spoken languages"
+msgstr ""
+
+#: templates/resume.template.html:147
+msgid "German (native)"
+msgstr ""
+
+#: templates/resume.template.html:149
+msgid ""
+"English (fluent)<br>Written english master thesis + seminar work / "
+"presentations + Bosch internship"
+msgstr ""
+
+#: templates/resume.template.html:151
+msgid "Japanese as a hobby (so far only basic/interm. reading)"
+msgstr ""
+
+#: templates/resume.template.html:156
+msgid "See some of my recent work"
+msgstr ""
+
+#~ msgid ""
+#~ "I was responsible to create most "
+#~ "of the game's logic, especially the "
+#~ "painting system. First, a masked "
+#~ "\"destruction\" texture is applied onto "
+#~ "the ceiling painting (see mask in "
+#~ "left image below). Painting is "
+#~ "accomplished by taking a \"brush\" "
+#~ "texture and projecting it onto a "
+#~ "drawable texture (render target) ceiling "
+#~ "based on the user's input (click "
+#~ "location with mouse or joystick "
+#~ "direction in VR). The render target "
+#~ "(see right image below) itself is "
+#~ "then treated as a mask for the "
+#~ "destruction texture."
+#~ msgstr ""
+
+#~ msgid "Recreation of a World Heritage Site using Shapes in Adobe Illustrator"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Reconstruction of the painting is "
+#~ "divided into two stages. For a "
+#~ "fresco, the first step is to apply"
+#~ " multiple layers of wet lime plaster"
+#~ " that need to dry. However, for "
+#~ "this game, only a single layer "
+#~ "needs to be applied without waiting "
+#~ "for it to dry &#128521;.<br> The "
+#~ "second stage involves re-coloring the"
+#~ " painting in a \"color by "
+#~ "numbers\"-like manner. This time, a "
+#~ "render target (mask) is required for "
+#~ "each of the fields that are able"
+#~ " to be filled with color. To "
+#~ "prevent pixel-precise accuracy for "
+#~ "completing the painting, a C++ script"
+#~ " is used to check whether a "
+#~ "mask is \"fully colored\" by introducing"
+#~ " a threshold, e.g., 80% of the "
+#~ "pixels need to be filled for the"
+#~ " painting to be considered complete."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A naive approach for rendering "
+#~ "geometrical objects in OpenGL is "
+#~ "traversing a list and changing state "
+#~ "and parameters for every object "
+#~ "encountered in that list. This turns "
+#~ "out to be ineffective, resulting in "
+#~ "hotspots at OpenGL functions which "
+#~ "require more than 50% of the "
+#~ "application's available time, leaving less "
+#~ "time for other subsystems of a "
+#~ "graphics engine. Multiple techniques are "
+#~ "considered and their change performance "
+#~ "evaluated: frustum culling, spatial data "
+#~ "structures, automated batching of similar "
+#~ "objects + multi draws, component "
+#~ "sorting, dirty flags to avoid re-"
+#~ "computation of unchanged values."
+#~ msgstr ""
+

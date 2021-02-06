@@ -1,0 +1,1051 @@
+# German translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-02-03 18:52+0100\n"
+"PO-Revision-Date: 2021-02-02 20:44+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: templates/footer.template.html:7
+msgid "Based on"
+msgstr "Basierend auf"
+
+#: templates/home.template.html:10
+msgid "Hi. I'm"
+msgstr "Hi. Ich bin"
+
+#: templates/home.template.html:13
+msgid "description"
+msgstr ""
+"Ich stehe derzeit vor dem Abschluss meines Masterstudiums in "
+"Computervisualistik an der Universität Koblenz, durch das ich Wissen in "
+"den Bereichen <strong>Bildverarbeitung & Computer Vision</strong>, "
+"<strong>Machine Learning</strong>, <strong>Robotik</strong> und "
+"<strong>Computergrafik</strong> erworben habe.<br>In Uni- und "
+"Hobbyprojekten sowie Praktika konnte ich Erfahrungen mit diversen Tools "
+"und Frameworks sammeln, darunter unter anderem <strong>Unreal "
+"Engine</strong>, <strong>ROS</strong> oder <strong>PyTorch</strong>. "
+"Insbesondere die Arbeit mit <strong>Python</strong> und <strong>modernem "
+"C++</strong> macht mir dabei Spaß."
+
+#: templates/home.template.html:17
+msgid "Feel free to contact me"
+msgstr "Gerne können Sie mich kontaktieren"
+
+#: templates/home.template.html:28
+msgid "My Resume"
+msgstr "Lebenslauf"
+
+#: templates/home.template.html:29
+msgid "My Projects"
+msgstr "Projekte"
+
+#: templates/nav.template.html:5 templates/nav.template.html:19
+#: templates/resume.template.html:5
+msgid "Resume"
+msgstr "Lebenslauf"
+
+#: templates/nav.template.html:6 templates/nav.template.html:20
+#: templates/projects.template.html:5
+msgid "Projects"
+msgstr "Projekte"
+
+#: templates/nav.template.html:7
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/nav.template.html:18
+msgid "Top"
+msgstr "Nach oben"
+
+#: templates/projects.template.html:6
+msgid "Here's some stuff I worked on."
+msgstr "Dinge, an denen ich gearbeitet habe."
+
+#: templates/projects.template.html:9
+msgid "Filter Keywords ..."
+msgstr "Suche nach Begriffen ..."
+
+#: templates/projects.template.html:11
+msgid "Keywords"
+msgstr "Suchbegriffe"
+
+#: templates/projects.template.html:27
+msgid "Master Thesis"
+msgstr "Masterarbeit"
+
+#: templates/projects.template.html:29
+msgid ""
+"Graph convolutional neural networks are applied in state-of-the-art "
+"models for skeleton-based action recognition. The focus of this work is "
+"to research the combination of this type of neural network and data from "
+"multiple modalities. Using skeletal data as a base for a graph "
+"convolutional network model, multiple approaches for fusion of skeleton, "
+"RGB and other sensor modalities are proposed. Experiments are conducted "
+"on the two multimodal datasets <a "
+"href=\"https://personal.utdallas.edu/~kehtar/UTD-MHAD.html\" "
+"target=\"_blank\">UTD-MHAD</a> and <a "
+"href=\"https://mmact19.github.io/2019/\" target=\"_blank\">MMAct</a> "
+"using various graph-like representations of modalities and their fusion "
+"at different stages of the neural network architecture."
+msgstr ""
+"Graph convolutional neural networks werden in modernen Verfahren "
+"skelettbasierter Aktionserkennung eingesetzt. Im Fokus der Arbeit steht "
+"die Untersuchung dieser Netzwerktypen im Zusammenhang mit dem Einsatz und"
+" der Fusion von Daten mehrerer Modalitäten. Unter Verwendung der "
+"graphstrukturierten Skelettdaten als Basis für ein graphenbasiertes, "
+"faltendes Netz werden unterschiedliche Verfahren vorgestellt, um "
+"Skelettsequenzen, RGB-Videosequenzen und Daten weiterer Sensoren zu "
+"vereinen. Die Versuche, die auf Daten aus den beiden multimodalen "
+"Datensätzen UTD-MHAD und MMAct basieren, betreffen Kombinationen der "
+"genannten Modalitäten, die an unterschiedlichen Stellen innerhalb der "
+"Netzwerkarchitektur stattfinden können."
+
+#: templates/projects.template.html:57
+msgid ""
+"The image shows one of the proposed fusion techniques concerning skeletal"
+" data (dark nodes), obtained from OpenPose, Kinect SDK, etc., and signals"
+" from accelerometer and gyroscope (red nodes) which are worn by the "
+"person performing an action. If both skeleton joints and IMU signals are "
+"represented by three-dimensional values (xyz), the skeleton graph can be "
+"augmented by simply appending additional nodes representing IMU (or other"
+" modalities)."
+msgstr ""
+"Das Bild zeigt eine der vorgeschlagenen Fusionsverfahren von Skelettdaten"
+" (schwarze Knoten), erhalten durch OpenPose, Kinect SDK, o.ä, und "
+"Signalen von getragenen Sensoren, wie z.B. Beschleunigungsmessern und "
+"Gyroskopen (rote Knoten). Falls beide Modalitäten durch dreidimensionale "
+"Werte repräsentiert sind, kann der Skelettgraph durch Anhängen weiterer "
+"Knoten (von IMU oder anderen Modalitäten) augmentiert werden."
+
+#: templates/projects.template.html:60
+msgid ""
+"Models are implemented and trained using PyTorch 1.6 with Python version "
+"3.8 and CUDA 10.2. All computations and experiments are conducted on a "
+"single Nvidia RTX 2080 GPU with 8GB of video memory. To guarantee a "
+"deterministic and reproducible behavior, all training procedures are "
+"initialized with a fixed random seed."
+msgstr ""
+"Alle Modelle sind in PyTorch 1.6, Python version 3.8 und CUDA 10.2 "
+"implementiert worden. Für die Berechnungen und Experimente wurde eine "
+"Nvidia RTX 2080 verwendet. Um Reproduzierbarkeit zu garantieren, werden "
+"alle Trainingsdurchläufe mit einem festen Seed initialisiert."
+
+#: templates/projects.template.html:63
+msgid ""
+"Regarding the skeleton-based approach as the base model, experiments to "
+"investigate benefits of multimodal approaches show that multiple fusion "
+"methods of skeleton and inertial sensor data achieve better "
+"classification accuracies than the base model on UTD-MHAD while a slight "
+"decrease in performance is noticeable on MMAct. The approaches for fusion"
+" of skeleton and RGB, while experiencing high accuracies on several "
+"training runs, similarly show a slight decrease in performance over the "
+"base model in the majority of cases."
+msgstr ""
+"Unter der Betrachtung des rein skelettbasierten Ansatzes als Basismodell "
+"und Klassifizierungsgenauigkeit als Maß für die Effizienz eines Modells "
+"werden Experimente zur Feststellung von Vorteilen der vorgestellten "
+"multimodalen Ansätze gegenüber dem Basismodell durchgeführt. Durch Fusion"
+" von Skelett- und Inertialsensordaten kann gegenüber dem Basismodell auf "
+"UTD-MHAD ein verbessertes Ergebnis erzielt werden, auf MMAct sind jedoch "
+"leichte Rückgänge zu beobachten. Zwar erreichen die Fusionsverfahren von "
+"Skelett- und RGB-Daten in einigen Durchläufen positive Ergebnisse, so ist"
+" doch auch hier ein Abfall der Effizienz auszumachen."
+
+#: templates/projects.template.html:94
+msgid ""
+"During the research internship \"Robbie\" our team of nine students "
+"developed behavior and human-machine interactions for two service robots "
+"that are the size of a small human. I was primarily responsible for "
+"implementing a robust people following routine for the scenario of "
+"carrying groceries or luggage for a human subject. My specific team role "
+"was \"Quality Management\" which involved preparing, supervising and "
+"documenting test scenarios according to official tournament rules and "
+"ratings as well as introducing and verifying coding guidelines. The "
+"project was presented online as part of <a href=\"https://userpages.uni-"
+"koblenz.de/~cvtag/web/alle-demos/taxyeardemos/2020/\">CV Tag 2020</a>."
+msgstr ""
+"Im Rahmen des Forschungspraktikums \"Robbie\" entwickelte unser Team aus "
+"neun Studierenden Verhalten und Mensch-Roboter-Interaktionen für zwei "
+"Serviceroboter. Meine Arbeit zeichnete sich hauptsächlich durch "
+"Implementierung einer robusten Routine zum Folgen von Personen aus, zum "
+"Beispiel wenn es darum geht, Gepäck oder Einkäufe zu tragen. In meiner "
+"Teamrolle \"Qualitätsmanagement\" war ich hauptsächlich verantwortlich "
+"für die Vorbereitung, Durchführung, Bewertung und Dokumentierung von "
+"Testdurchläufen auf Basis offizieller Turnierregeln, aber auch die "
+"Durchsetzung von Coding-Guidelines spielte eine Rolle. Das Projekt wurde "
+"als Teil des <a href=\"https://userpages.uni-koblenz.de/~cvtag/web/alle-"
+"demos/taxyeardemos/2020/\">CV Tags 2020</a> präsentiert."
+
+#: templates/projects.template.html:99
+msgid ""
+"People tracking, which is required for following people, is a challenging"
+" subject. The task is to identify the same person within an arbitrary "
+"number of time-shifted image frames and to prevent a mismatch, that is, "
+"recognizing something/someone else as the target. Since this is a visual "
+"recognition task, re-identification is further complicated by occlusion "
+"(esp. by other people or taking abrupt turns through doors), lighting, "
+"video quality and clothes/appearance in combination with viewing a person"
+" from different angles. Furthermore, following requires the robot to "
+"drive behind the operator at a comfortable distance while avoiding "
+"obstacles which inevitably results in it losing its operator."
+msgstr ""
+"Tracking von Personen ist ein komplexes Thema und Voraussetzung, um "
+"Personen folgen zu können. Das Ziel ist es, eine Person zwischen einer "
+"beliebigen Anzahl zeitlich aufeinanderfolgenden Bilder wieder "
+"identifizieren zu können, ohne, dass Personen dabei vertauscht werden. Da"
+" es sich um ein visuelles Problem handelt, wird die Erkennung zusätzlich "
+"durch Verdeckung (durch andere Personen und Objekte), Lichtverhältnisse, "
+"Bildqualität und dem Aussehen der Personen beeinflusst. Außerdem muss der"
+" Roboter immer einen passenden Abstand zur zu folgenden Person halten, "
+"was zwangsweise dazu führt, dass die Kamera beim Ausweichen von Objekten "
+"gelegentlich ihr Ziel \"aus den Augen\" verliert."
+
+#: templates/projects.template.html:103
+msgid ""
+"Using ROS with C++, two packages <i>people-tracking</i> and <i>people-"
+"following</i> are created that communicate with each other. The former is"
+" responsible for tracking people between frames based on RGB-D images "
+"from Kinect, OpenPose detections and OpenCV. A feature vector is computed"
+" for each detection and matched with all existing tracks using Hungarian "
+"algorithm. Similarity metrics are euclidean distance of last known "
+"positions, euclidean distance of predicted positions using Unscented "
+"Kalman Filter, histogram comparison using Bhattacharyya distance, "
+"distance of face detection embeddings and an online classifier based on "
+"<a href=\"https://www.researchgate.net/publication"
+"/325854919_Convolutional_Channel_Features-"
+"Based_Person_Identification_for_Person_Following_Robots\">this paper</a> "
+"(using features of a person reid neural network forwarded into online "
+"AdaBoost). The most reliable method is face detection which is not very "
+"useful to re-identify a followed person when the robot drives behind its "
+"target. <i>people-following</i> subscribes to the robot's base pose and "
+"camera pose and receives tracking data to publish commands that adjust "
+"the camera's position, turn the robot or drive to a location."
+msgstr ""
+"Zwei untereinander kommunizierende ROS-Pakete <i>people-tracking</i> und "
+"<i>people-following</i> werden mit C++ implementiert. Das erste Paket ist"
+" verantwortlich für das Tracking der Personen zwischen Bildern. Zur "
+"Verfügung stehen dabei RGB-D Bilder von Kinect, OpenPose-Detektionen, "
+"OpenCV und Eigen. Nachdem für jede Detektion ein Featurevektor und dessen"
+" Ähnlichkeit zu allen vorhandenen Tracks berechnet wurde, sorgt der Kuhn-"
+"Munkres-Algorithmus für die Zuordnung von Detektionen zu Tracks. Fünf "
+"Ähnlichkeitsmetriken werden eingesetzt: Euklidische Distanz zwischen "
+"zuletzt bekannten Positionen, euklidische Distanz zu prognostizierter "
+"Position durch ein Unscented Kalman-Filter, Histogrammvergleich mittels "
+"Bhattacharyya-Distanz, Distanz von Embeddings der Gesichtserkennung und "
+"ein Online-Klassifizierer basierend auf <a "
+"href=\"https://www.researchgate.net/publication"
+"/325854919_Convolutional_Channel_Features-"
+"Based_Person_Identification_for_Person_Following_Robots\">diesem "
+"Paper</a>. Gesichtserkennung ist die verlässlichste Methode, jedoch beim "
+"Hinterherfahren selten einsetzbar. Das Paket <i>people-following</i> "
+"empfängt Nachrichten zu getrackten Personen und der aktuellen Pose der "
+"Roboterplattform und -kamera, auf deren Basis der Roboter bewegt wird"
+
+#: templates/projects.template.html:124
+msgid ""
+"The above picture is produced by the <i>people-tracking</i> package for "
+"debugging/visualization purposes."
+msgstr ""
+"Das obere Bild wird durch <i>people-tracking</i> zu "
+"Visualisierungszwecken erzeugt."
+
+#: templates/projects.template.html:126
+msgid "Frame number since tracking started"
+msgstr "Anzahl der Bilder seit Start des Trackings"
+
+#: templates/projects.template.html:127
+msgid ""
+"Person bounding box (blue in tracking-only mode; In following mode: green"
+" for followed person, red for everyone else)"
+msgstr ""
+"Bounding box einer Person (blau im Tracking-Modus; Im Folgen-Modus: grün "
+"bei gefolgter Person, sonst rot)"
+
+#: templates/projects.template.html:128
+msgid "Face detection bounding box"
+msgstr "Bounding box der Gesichtserkennung"
+
+#: templates/projects.template.html:129
+msgid "Overall weighted matching error (lower is better)"
+msgstr "Gewichteter Zuordnungsfehler (niedriger ist besser)"
+
+#: templates/projects.template.html:130
+msgid ""
+"Unweighted matching errors of the mentioned similarity metrics (between "
+"0-best and 1-worst)"
+msgstr ""
+"Ungewichtete Fehler für die erwähnten Ähnlichkeitsmetriken (zwischen "
+"0-gut und 1-schlecht)"
+
+#: templates/projects.template.html:131
+msgid "Depth-masked person to omit background for histogram comparison"
+msgstr ""
+"Tiefenmaske der Person um den Hintergrund beim Histogrammvergleich "
+"auszuschließen"
+
+#: templates/projects.template.html:133
+msgid ""
+"Quality of current frame (green: good quality, usable for online "
+"learning; red: bad quality due to strong blur or occlusion, do not use to"
+" train online classifier)"
+msgstr ""
+"Qualität der Erkennung (grün: gute Qualität, wird für Training des "
+"Online-Klassifizierers eingesetzt; rot: schlechte Qualität durch "
+"Unschärfe oder Verdeckung)"
+
+#: templates/projects.template.html:135
+msgid "Person ID"
+msgstr "ID einer Person"
+
+#: templates/projects.template.html:140
+msgid ""
+"Here's a video showing people following in action with obstacles and "
+"partial occlusion"
+msgstr "Hier ein Video, das <i>people-following</i> in Aktion zeigt"
+
+#: templates/projects.template.html:174
+msgid "Edutainment: Fresco Restauration in VR"
+msgstr "Edutainment: Restauration eines Freskengemäldes in VR"
+
+#: templates/projects.template.html:176
+msgid ""
+"In this VR simulation you take the role of a painter who is tasked to "
+"restore a fresco ceiling painting inside a virtual reconstruction of "
+"Engers castle's Dianasaal. While playing, the game provides explanations "
+"and background to both fresco painting and the painting (named \"Triumpf "
+"der Diana\") itself. This project was created in a two-person team over "
+"nearly two semesters in Unreal Engine as part of the module "
+"Gamedesign/Edutainment. The project was presented as part of <a "
+"href=\"https://userpages.uni-koblenz.de/~cvtag/web/alle-"
+"demos/taxyeardemos/2019/\">CV Tag 2019</a>."
+msgstr ""
+"In dieser VR-Simulation einer virtuellen Rekonstruktion des Dianasaals in"
+" Schloss Engers übernimmt man die Rolle eines Malers der beauftragt wird,"
+" ein Deckenfresko zu restaurieren. Während des Spiels werden "
+"Informationen zum Hintergrund des Gemäldes (namens \"Triumpf der Diana\")"
+" und der Maltechnik vermittelt. Das Projekt wurde im Zweierteam über ca. "
+"zwei Semester in Unreal Engine als Teil des Moduls "
+"\"Gamedesign/Edutainment\" fertiggestellt und als Teil des <a "
+"href=\"https://userpages.uni-koblenz.de/~cvtag/web/alle-"
+"demos/taxyeardemos/2019/\">CV Tags 2019</a> präsentiert."
+
+#: templates/projects.template.html:181
+msgid ""
+"I was responsible to create most of the game's logic, especially the "
+"painting system. First, a masked \"destruction\" texture is applied onto "
+"the ceiling painting (see mask in left image below). Painting is "
+"accomplished by taking a \"brush\" texture and projecting it onto a "
+"drawable texture (render target) on the ceiling based on the user's input"
+" (click location with mouse or joystick direction in VR). The render "
+"target (see right image below) itself is then treated as a mask for the "
+"destruction texture."
+msgstr ""
+"Ich war verantwortlich für die Programmlogik, insbesondere der des "
+"Malsystems. Zuerst wird eine \"Zerstörungs\"-Textur auf das Deckengemälde"
+" angebracht (Maske dafür in Bild unten links). Um malen zu können, wird "
+"basierend auf der Eingabe des Nutzers (Klickbereich durch Maus oder "
+"Richtung des Joysticks in VR)eine Pinseltextur auf eine \"bemalbare\" "
+"Textur (Rendertarget) an der Decke projiziert. Das Rendertarget (Bild "
+"rechts unten) wird dann ebenfalls als Maske für die "
+"\"Zerstörungs\"-Textur verwendet."
+
+#: templates/projects.template.html:209
+msgid "painting-stages-desc"
+msgstr ""
+"Die Rekonstruktion des Gemäldes ist in zwei Stufen unterteilt. Für ein "
+"Fresko ist es zunächst erforderlich, mehrere Schichten Kalkputz "
+"aufzutragen, der nach jeder Schicht trocknen muss. In diesem Spiel muss "
+"jedoch nur eine Schicht aufgetragen werden ohne nachträglicher Wartezeit "
+"&#128521;.<br> In der zweiten Stufe wird das Gemälde im Prinzip von Malen"
+" nach Zahlen nachgefärbt. Um zu verhindern, dass alles pixelgenau "
+"ausgefüllt werden muss, wird ein C++-Script eingesetzt um zu überprüfen, "
+"wann der Großteil einer Fläche ausgemalt wurde."
+
+#: templates/projects.template.html:230
+msgid ""
+"Here's a video showing painting the whole region and individual parts in "
+"debug mode, that is, using mouse & keyboard instead of VR joysticks <i "
+"class=\"icon solid fa-arrow-right\" style=\"font-size: .7em\"></i> janky "
+"movements &#x1F642;"
+msgstr ""
+"Hier ist ein Video, das die zwei Stufen zeigt (mit Maus/Tastatur, daher "
+"die unsauberen Bewegungen &#x1F642;)"
+
+#: templates/projects.template.html:259
+msgid "Realtime Terrain Rendering using Quadtree LOD"
+msgstr "Terrain Rendering mit Quadtree LOD in Echtzeit"
+
+#: templates/projects.template.html:261
+msgid ""
+"Terrain Rendering implemented using C++, OpenGL and tessellation shaders."
+" A Quadtree deals with the LOD of the terrain and is updated whenever the"
+" camera moves. Each quadtree cell and its neighbor information is then "
+"passed to the tessellation shader where it is appropriately tessellated "
+"based on distance to camera."
+msgstr ""
+"Terrain Rendering auf Basis von C++, OpenGl und Tessellation-Shadern. Ein"
+" Quadtree sorgt für passendes LOD des Terrains und wird durch Bewegung "
+"der Kamera aktualisiert. Jede Zelle und dessen "
+"Nachbarschaftsinformationen wird dem Tessellation-Shader übergeben, der "
+"die Fläche abhängig von der Distanz zur Kamera passend aufteilt."
+
+#: templates/projects.template.html:265
+msgid ""
+"This way, using the neighbor information, vertex cracks in the "
+"environment between two small squares adjacent to one big square are "
+"easily avoided. The vertical displacement is then given by sampling a "
+"heightmap. While closing cracks is trivial, one big problem using "
+"Quadtrees for LOD is vertex popping when four small squares collapse into"
+" one big one and vice versa. Here's a video showing flying through the "
+"world with updating LOD:"
+msgstr ""
+"Durch die Nachbarschaftsinformationen können Cracks zwischen zwei kleinen"
+" und einem großen Quadrat leicht vermieden werden. Die Vertikalität "
+"entsteht durch Sampling einer Heightmap. Obwohl das Schließen von Cracks "
+"trivial ist, führt die Verwendung von Quadtrees für LOD zu einem starken "
+"Effekt von Vertex-Popping sobald sich vier kleine Flächen zu einer "
+"größeren Fläche zusammenschließen, oder umgekehrt. Hier ist ein Video zum"
+" Projekt:"
+
+#: templates/projects.template.html:293
+msgid "Research: Logic Puzzles - The Boy or Girl Paradox"
+msgstr "Recherche: Logikrätsel - Junge-oder-Mädchen-Problem"
+
+#: templates/projects.template.html:295
+msgid ""
+"The Boy or Girl paradox raises the question about the probability for a "
+"random two-child family to have two boys or two girls given some "
+"statement about the family or one of the two children. One of the most "
+"frequently used statements is about a random two-child family where at "
+"least one of the children is a boy and asked for is the probability of "
+"them having two boys. When intuitively answering these types of "
+"questions, people's opinions about the correct solution and method of "
+"achieving said solution differ. When dealing with conditional "
+"probabilities, people often apply simple mental models that either lead "
+"to a wrong solution or may be correct for a particular problem but don't "
+"transfer to other problems."
+msgstr ""
+"Beim Junge-oder-Mädchen-Problem geht es darum, basierend auf einer "
+"Aussage über eine Zweikindfamilie, die Wahrscheinlichkeit zu ermitteln, "
+"zu der beide Kinder Jungen oder beide Kinder Mädchen sind. Bei "
+"Beantwortungs der Frage gehen die Meinungen auseinander. Im Vordergrund "
+"dabei steht das Problem, das Menschen haben, wenn sie mit bedingten "
+"Wahrscheinlichkeiten konfrontiert werden. Dabei wird meist ein simples "
+"mentales Modell des Problems angewandt, das jedoch nicht zu einer "
+"korrekten Lösung führt oder, falls doch, nicht auf andere "
+"Problemstellungen übertragbar ist."
+
+#: templates/projects.template.html:299
+msgid "Statements 1 and 2"
+msgstr "Aussagen 1 und 2"
+
+#: templates/projects.template.html:302
+msgid ""
+"Mr. Smith has two children. At least one of them is a boy. What is the "
+"probability P(BB) that both children are boys? Answer"
+msgstr ""
+"Herr Schmitt hat zwei Kinder, davon mindestens einen Jungen. Wie hoch ist"
+" die Wahrscheinlichkeit P(BB), dass beide Kinder Jungen sind? Antwort"
+
+#: templates/projects.template.html:305
+msgid ""
+"Mr. Jones has two children. The older child is a girl. What is the "
+"probability P(GG) that both children are girls? Answer"
+msgstr ""
+"Herr Jones hat zwei Kinder. Das ältere Kind ist ein Mädchen. Wie hoch ist"
+" die Wahrscheinlichkeit P(GG), dass beide Kinder Mädchen sind? Antwort"
+
+#: templates/projects.template.html:310
+msgid ""
+"The statement \"at least one boy\" implies that the latter of the four "
+"possibilities, girl-girl (see image), is unreachable. This leaves three "
+"equiprobable cases, one of which corresponds to the target scenario, "
+"i.e., the probability of having two boys. As for statement 2, two of the "
+"four cases are unreachable and so the resulting probability is 1/2. "
+"However, the first statement is ambiguous and, depending on context and "
+"background information, the answer could also be 1/2. The change in "
+"outcome is subject to the way in which the information \"at least one of "
+"them is a boy\" is obtained."
+msgstr ""
+"Die Aussage \"mindestens ein\" impliziert, dass die untere der vier "
+"Möglichkeiten (siehe Bild) nicht zutreffen kann. Es bleiben drei "
+"gleichwahrscheinliche Fälle, wovon einer der Zielbeschreibung entspricht."
+" Für Aussage 2 ergeben nur zwei der vier Möglichkeiten Sinn, daher die "
+"resultierende Wahrscheinlichkeit von 1/2. Allerdings ist die erste "
+"Aussage mehrdeutig und kann, je nach Kontext und der Art, wie die "
+"Information erhalten wurde, auch zu einer Antwort von 1/2 führen."
+
+#: templates/projects.template.html:313
+msgid "Statements 3 and 4"
+msgstr "Aussagen 3 und 4"
+
+#: templates/projects.template.html:316
+msgid ""
+"Mr. Smith is the father of two. We meet him walking on the street with a "
+"young boy whom he proudly introduces as his son. What is the probability "
+"that Mr. Smith's other child is also a boy? Answer"
+msgstr ""
+"Herr Schmitt ist der Vater von zwei Kindern. Wir treffen ihn während "
+"eines Spaziergangs mit einem Jungen, den er stolz als seinen Sohn "
+"vorstellt. Wie hoch ist die Wahrscheinlichkeit, dass Herr Schmitts "
+"zweites Kind auch ein Junge ist? Antwort"
+
+#: templates/projects.template.html:319
+msgid ""
+"We meet Mr. Smith (whom we know to be the father of two) in the street "
+"with a boy. This time, he is more elaborate in his introduction, "
+"presenting the boy as his eldest child. What is the probability that Mr. "
+"Smith's other child is also a boy? Answer"
+msgstr ""
+"Wir treffen Herrn Schmitt (von dem wir wissen, dass er zwei Kinder hat) "
+"während eines Spaziergangs mit einem Jungen. Diese mal ist er mit seiner "
+"Aussage ausführlicher und stellt ihn als sein ältestes Kind vor. Wie hoch"
+" ist die Wahrscheinlichkeit, dass Herr Schmitts zweites Kind auch ein "
+"Junge ist? Antwort"
+
+#: templates/projects.template.html:324
+msgid ""
+"Contrary to what one intuitively believes when comparing statements 3 and"
+" 4 to statements 1 and 2, the solution to both statement 3 and statement "
+"4 is identical, that is, P(BB) = 1/2. The relevant information is the "
+"observation that we meet the son on a walk with his father. Like the "
+"attributes <i>older</i> and <i>younger</i> child, this creates a notion "
+"of <i>child on a walk</i> and <i>child not on a walk</i>. The following "
+"figure shows all combinations and unreachable ones."
+msgstr ""
+"Konträr zu der Annahme, dass Aussagen 3 und 4 in ihrer Ähnlichkeit "
+"Aussagen 1 und 2 entsprechen, ist das Ergebnis für beide Aussagen eine "
+"Wahrscheinlichkeit von 1/2. Relevant ist die Information, dass ein Sohn "
+"in Person getroffen wird. Wie mit den Attributen <i>älter</i> und "
+"<i>jünger</i> bei Aussagen 1 und 2 führt dies hier zu einer Notation von "
+"<i>Kind getroffen</i> <i>Kind zuhause</i>, von denen alle möglichen und "
+"unerreichbaren Kombinationen in der folgenden Tabelle aufgelistet sind."
+
+#: templates/projects.template.html:363
+msgid "Research: BRDF Importance Sampling"
+msgstr "Recherche: BRDF Importance Sampling"
+
+#: templates/projects.template.html:365
+msgid ""
+"The <a "
+"href=\"https://en.wikipedia.org/wiki/Rendering_equation\">rendering "
+"equation</a> can be approximated using Monte Carlo Integration (MCI) with"
+" N samples and a probability density function (PDF) that defines the "
+"distribution of incident light directions. Assuming the PDF corresponds "
+"to a uniform distribution, the incident light ray has equal probability "
+"to come from any direction. This results in a large variance for MCI and "
+"would be inefficient for strongly reflective surfaces."
+msgstr ""
+"Die <a "
+"href=\"https://de.wikipedia.org/wiki/Rendergleichung\">Rendergleichung</a>"
+" kann mithilfe von Monte-Carlo-Integration (MCI) mit N Proben (Samples) "
+"und einer Wahrscheinlichkeitsdichtefunktion (PDF), welche die Verteilung "
+"von inzidenten Lichtrichtungen definiert, approximiert werden. Angenommen"
+" die PDF entspricht einer Gleichverteilung, dann ist die "
+"Wahrscheinlichkeit zu der ein Lichtstahl aus einer bestimmten Richtung "
+"kommen kann, für alle Richtungen gleich. Dies führt zu einer starken "
+"Varianz für MCI und wäre für stark reflektierende Oberflächen "
+"ineffizient."
+
+#: templates/projects.template.html:368
+msgid ""
+"Because convergence to a correct solution is "
+"<code>O(n<sup>-1/2</sup>)</code>, halving the approximation error "
+"requires four times the amount of samples. Importance Sampling is a "
+"technique to pick samples from distributions that reduce variance for MCI"
+" and, with that, reduce noise in the rendered image. The figure shows "
+"uniform sampling (left) and cosine-weighted sampling (right)."
+msgstr ""
+"Weil MCI nur mit <code>O(n<sup>-1/2</sup>)</code> zu einem idealen "
+"Ergebnis konvergiert, werden für eine Halbierung des Fehlers viermal so "
+"viele Proben benötigt. Importance Sampling ist ein Verfahren um gezielt "
+"Proben zu entnehmen, durch die die Varianz bei MCI möglichst gering "
+"bleibt, was dazu führt, dass Bildrauschen beim Rendering reduziert wird. "
+"Die Abbildung zeigt Sampling einer Gleichverteilung (links) und Sampling "
+"einer kosinusgewichteten Verteilung (rechts)."
+
+#: templates/projects.template.html:390
+msgid "Japanese-English Offline Dictionary and Learning App (WIP)"
+msgstr "Japanisch-Englisch Offline-Wörterbuch und Lernapp (WIP)"
+
+#: templates/projects.template.html:392
+msgid ""
+"A Japanese-English offline dictionary and learning app built using C# WPF"
+" and the dictionaries JMdict end JMNedict. To achieve very quick response"
+" times, a Lucene search database is created from these dictionaries. "
+"Antlr is used to create a domain specific language for the search queries"
+" inside the app. The dictionary is still incomplete and the learning part"
+" (planned like Anki but more interactive) not started."
+msgstr ""
+"Entwicklung eines Offline-Wörterbuchs und einer Lernapp für Japanisch auf"
+" Basis von C# und WPF und den Datenbanken JMdict und JMNedict. Für "
+"schnelle Antwortzeiten sorgt ein Lucene-Suchindex und Antlr, um eine DSL "
+"für Suchanfragen umzusetzen. Die Funktionalität des Wörterbuchs ist "
+"unvollständig."
+
+#: templates/projects.template.html:415
+msgid ""
+"A collection of WPF GUI elements, mainly a tab panel with attachable, "
+"detachable and arbitrarily organizable tabs. Also included are UI "
+"elements like color and brush picker that are, for example, bound to and "
+"directly modify a WPF Color or SolidColorBrush object."
+msgstr ""
+"Eine Sammlung von GUI-Elementen für WPF, hauptsächlich ein Tab-Panel mit "
+"anfüg-, abtrenn- und gruppierbaren Tabs. Des Weiteren sind Elemente "
+"vorhanden, die an WPF-Klassen gebunden sind, so zum Beispiel ein Color- "
+"oder Brushpicker, um direkt Color und SolidColorBrush zu modifizieren."
+
+#: templates/projects.template.html:434
+msgid "Bachelor Thesis"
+msgstr "Bachelorarbeit"
+
+#: templates/projects.template.html:436
+msgid ""
+"For my bachelor thesis I developed a mini realtime graphics engine using "
+"only OpenGL and Java (JOGL). Since OpenGL is a state machine the goal was"
+" to create an efficient architecture and implement techniques to reduce "
+"the number of state changes. The architecture is based on the "
+"Entity–component–system architectural pattern, similar to Unity Engine."
+msgstr ""
+"Im Rahmen meiner Bachelorarbeit entwickelte ich eine kleine Echtzeit-"
+"Grafikengine mit OpenGL und Java (JOGL). Da OpenGL ein Zustandsautomat "
+"ist, war das Ziel, eine effiziente Architektur zu schaffen und Techniken "
+"zu implementieren, um die Anzahl der Zustandswechsel zu reduzieren. Die "
+"Architektur basiert auf dem Entity-component-system-Entwurfsmuster, das "
+"unter anderem auch bei der Unity Engine zum Einsatz kommt."
+
+#: templates/projects.template.html:439
+#, fuzzy
+msgid "bachelor-thesis-desc-2"
+msgstr ""
+"Ein naiver Ansatz für das Rendern von Objekten in OpenGL ist das "
+"Durchlaufen einer Liste, wodurch Zustand und Konfiguration für jedes "
+"Objekt geändert werden muss. Dies führt zu einer starken Ineffizienz, da "
+"mehr als 50% der verfügbaren Anwendungszeit zur Ausführung von OpenGL-"
+"Funktionen erforderlich wird und damit weniger Zeit für den Quellcode der"
+" Grafikengine übrig bleibt. In der Arbeit werden mehrere Techniken und "
+"ihre Auswirkung auf die Performance evaluiert. Dazu gehören Frustum "
+"Culling, räumliche Datenstrukturen, automatisches Batching von ähnlichen "
+"Objekten und anschließenden Multidraws, Sortieren von Objekten ung Dirty-"
+"Flags, um Neuberechnungen von unveränderten Werten zu vermeiden."
+
+#: templates/projects.template.html:485
+msgid ""
+"3D Simulation and Manipulation of Signal Representations and their "
+"Fourier Transformation in VR"
+msgstr ""
+"3D-Simulation und Manipulation von Signalen und ihren Fourier-"
+"Transformierten in VR"
+
+#: templates/projects.template.html:487
+msgid ""
+"In a two-person team we created a VR-simulation in Unity Engine that lets"
+" you modify images using a variety of different brushes and observe their"
+" changes influence the magnitude image of its Fourier transformation (or "
+"vice versa). I was mainly responsible for rendering and updating the "
+"images in realtime, implementing 2D-FFT as a C++ plugin for Unity and "
+"create the advisory screen using a HTML5 renderer for Unity."
+msgstr ""
+"In einem Zweierteam entwickelten wir eine VR-Simulation in Unity die "
+"ermöglicht, Bilder unter Auswahl einer von zahlreichen Pinseln zu "
+"modifizieren und sofort die Auswirkungen auf das Magnitudenspektrum der "
+"Fourier-Transformierten zu beobachten (oder umgekehrt). Ich war "
+"hauptsächlich dafür verantwortlich, alle Bilder in Echtzeit zu "
+"aktualisieren, ein C++-Plugin zur Berechnung der 2D-FFT zu implementieren"
+" und den Hilfsbildschirm mithilfe eines HTML5-Renderers für Unity zu "
+"entwerfen."
+
+#: templates/projects.template.html:491
+msgid ""
+"The image (grayscale only) itself is rendered as a 3D-representation with"
+" the pixel intensity being the vertical displacement. For performance "
+"reasons, the 3D image is not made up of individual cuboid entities but "
+"instead a single mesh that is generated on the fly. The user selects a "
+"brush (e.g., 5x5 brush illustrated by green area in image) and applies it"
+" by pointing on the image (ray gets projected onto mesh to determine area"
+" of input) and then dragging up or down to modify the intensity of the "
+"pixel area."
+msgstr ""
+"Das Bild (nur Grauwertbild) wird als 3D-Repräsentation gerendert, wobei "
+"die Pixelintensitäten für die vertikale Verschiebung sorgen. Aus "
+"Performancegründen wird das 3D-Bild nicht aus individuellen Quadern "
+"zusammengesetzt, sondern als ein komplettes Mesh gerendert, das für jede "
+"Aktualisierung neu erzeugt wird. Der Nutzer wählt einen Pinsel (zum "
+"Beispiel ein 5x5 Quadrat wie durch den grünen Bereich im Bild "
+"verdeutlicht) und wendet ihn durch Zeigen auf das Bild an. Dabei wird ein"
+" Strahl auf das Mesh projiziert um den Eingabeschnittpunkt zu ermitteln. "
+"Durch vertikale Bewegungen des Joysticks kann dann durch den Pinsel die "
+"Intensität des Pixelbereichs angepasst werden."
+
+#: templates/projects.template.html:557
+msgid "Puzzle Box in OpenGL"
+msgstr "Puzzle in OpenGL"
+
+#: templates/projects.template.html:559
+msgid ""
+"My first project using OpenGL (with perspective camera, lighting and "
+"animations) in Java (LWJGL) was about creating a puzzle game where you "
+"could use any of your own pictures to puzzle. Additionally, the user can "
+"choose from a variety of different filters that are applied to the image,"
+" such as painting filter (using binning/thresholding in HSV color space) "
+"or drawing filter (using sobel edges)."
+msgstr ""
+"Mein erstes Projekt mit OpenGL (mit perspektivischer Kamera, Beleuchtung "
+"und Animationen) in Java (LWJGL) umfasste die Entwicklung eines "
+"Puzzlespiels, für das eigene Fotos genutzt werden können. Zusätzlich kann"
+" der Nutzer einen von vielen verfügbaren Filtern auswählen, der auf das "
+"Bild angewandt wird. Dazu zählen beispielsweise ein Gemälde-Filter (durch"
+" Thresholding im HSV-Farbraum) oder Zeichnungs-Filter (durch Sobel-"
+"Kantendetektion)."
+
+#: templates/projects.template.html:562
+msgid ""
+"The user is able to drag and drop the individual puzzle parts. "
+"Correctness of a placed part is communicated with an appropriate sound. "
+"Here's an image showing the painting filter:"
+msgstr ""
+"Dem Nutzer ist es möglich, individuelle Puzzleteile per Drag&Drop zu "
+"bewegen und zu platzieren. Ob ein Puzzleteil richtig oder falsch "
+"platziert wurde, wird mit einem entsprechendem Ton bekannt gegeben."
+
+#: templates/projects.template.html:605
+msgid ""
+"In this web design group project we created a social network where users "
+"can start challenges to upload pictures of a specific theme (e.g., "
+"nature, food) and type (e.g., photography, drawing, screenshot). Users "
+"can either join the challenge or comment and vote on their favorite "
+"picture. I was mainly responsible for backend programming and front end "
+"pages for user registration, login and profile. Sample image from <a "
+"href=\"https://www.publicdomainpictures.net\">https://www.publicdomainpictures.net</a>."
+msgstr ""
+"In diesem Gruppenprojekt für Webentwicklung haben wir ein soziales "
+"Netzwerk entwickelt, in dem Nutzer Challenges starten können, indem sie "
+"ein Bild von einem bestimmten Typ (Screenshot, Fotografie, Zeichnung) und"
+" eines bestimmten Themas (Natur, Essen) hochladen. Andere Nutzer können "
+"entweder ihr favorisiertes Bild kommentieren und bewerten oder selbst "
+"durch Upload eines passenden Bilds in die Challenge einsteigen. Ich war "
+"hauptsächlich verantwortlich für Programmierung des Backends in PHP und "
+"Programmierung des Frontends für die Seiten des Benutzerprofils und der "
+"Benutzerregistrierung und -anmeldung. Beispielbild von <a "
+"href=\"https://www.publicdomainpictures.net\">https://www.publicdomainpictures.net</a>."
+
+#: templates/projects.template.html:626
+msgid "Some Older & Small-scale Projects"
+msgstr "Alte & Kleine Projekte"
+
+#: templates/projects.template.html:628
+msgid ""
+"Some smaller and first programming projects that were part of my "
+"undergraduate curriculum."
+msgstr "Einige kleinere Projekte, die Teil meines Bachelorstudiums waren."
+
+#: templates/projects.template.html:633
+msgid "Modelling and Rendering of a Festival / Circus World in Autodesk Maya 2016"
+msgstr "Modellierung und Rendering einer Kirmes / Zirkuswelt in Autodesk Maya 2016"
+
+#: templates/projects.template.html:695
+msgid "Photo Viewer with Social Media and Cloud Synchronization built in JavaFX"
+msgstr "Foto-App mit Synchronisierung für soziale Netzwerke und Clouds in JavaFX"
+
+#: templates/projects.template.html:697
+msgid ""
+"Synchronization only implemented for Flickr since it provided the least "
+"restricted API without paid access."
+msgstr ""
+"Die Synchronisierung wurde nur mit Flickr implementiert, da die API ohne "
+"bezahlten Zugang am wenigsten eingeschränkt war."
+
+#: templates/projects.template.html:718
+msgid "Re-creation of a World Heritage Site using Shapes in Adobe Illustrator"
+msgstr "Nachempfindung eines Weltkultureres in Adobe Illustrator"
+
+#: templates/projects.template.html:720
+msgid ""
+"Building: Alatornio Church<br> Lots of trees in the background are "
+"missing &#x1F642;"
+msgstr ""
+"Gebäude: Kirche von Alatornio<br>Die Bäume und Sträucher im Vorder- und "
+"Hintergrund habe ich ausgelassen &#x1F642;"
+
+#: templates/projects.template.html:742
+msgid ""
+"My first group programming project ever is a whack-a-mole game built in "
+"Java Swing. It doesn't look pretty but it works &#128521;"
+msgstr ""
+"Mein erstes Gruppen-Programmierprojekt \"MoleSmash\" ist Whack-a-mole "
+"implementiert in Java Swing. Sieht nicht sonderlich hübsch aus, "
+"funktioniert aber &#128521;"
+
+#: templates/projects.template.html:779
+msgid "Get in touch with me"
+msgstr "Kontaktieren Sie mich"
+
+#: templates/resume.template.html:6
+msgid "The places I worked and studied at."
+msgstr "Hier habe ich gelernt und gearbeitet."
+
+#: templates/resume.template.html:10
+msgid "Education"
+msgstr "Ausbildung"
+
+#: templates/resume.template.html:14
+msgid "Computational Visualistics"
+msgstr "Computervisualistik"
+
+#: templates/resume.template.html:17 templates/resume.template.html:80
+msgid "University of Koblenz"
+msgstr "Universität Koblenz"
+
+#: templates/resume.template.html:23
+msgid "Robotics"
+msgstr "Robotik"
+
+#: templates/resume.template.html:23
+msgid "Operating Systems"
+msgstr "Betriebssysteme"
+
+#: templates/resume.template.html:26
+msgid "Programming languages"
+msgstr "Programmiersprachen"
+
+#: templates/resume.template.html:35
+msgid "Computational Visualistics and Design"
+msgstr "Computervisualistik und Design"
+
+#: templates/resume.template.html:37
+msgid "Oct. 2013 - Oct. 2017"
+msgstr "Okt. 2013 - Okt. 2017"
+
+#: templates/resume.template.html:38
+msgid "Hamm-Lippstadt University of Applied Sciences"
+msgstr "Hochschule Hamm-Lippstadt"
+
+#: templates/resume.template.html:47
+msgid ""
+"Foundations of Computer science (algorithms, data structures, software "
+"design patterns), computer vision and computer graphics"
+msgstr ""
+"Grundlagen der Informatik (Algorithmen, Datenstrukturen, Entwurfsmuster "
+"der Softwarearchitektur), Bildverarbeitung und Computergrafik"
+
+#: templates/resume.template.html:49
+msgid "ergonomics"
+msgstr "Ergonomie"
+
+#: templates/resume.template.html:49
+msgid "web design"
+msgstr "Webentwicklung"
+
+#: templates/resume.template.html:52
+msgid "Main programming language"
+msgstr "Meistgenutzte Programmiersprache"
+
+#: templates/resume.template.html:61
+msgid "abitur-desc"
+msgstr " "
+
+#: templates/resume.template.html:73
+msgid "Internships"
+msgstr "Praktika"
+
+#: templates/resume.template.html:86
+msgid ""
+"Work on two much-rewarded service robots as part of a research internship"
+" in a team of nine students and two research assistants."
+msgstr ""
+"Als Teil eines Forschungspraktikums ging es in einem Team von neun "
+"Studierenden und zwei wiss. Mitarbeitern um die Arbeit an zwei "
+"Servicerobotern, die bereits mehrere Auszeichnungen erhalten haben."
+
+#: templates/resume.template.html:89
+msgid ""
+"Implementation of human-robot-interactions in the context of home "
+"assistance, such as people tracking & following and item retrieval, "
+"carrying and handover, in preparation for RoboCup German Open and RoboCup"
+" World Championship (sadly both cancelled)"
+msgstr ""
+"Implementierung von Mensch-Roboter-Interaktionen im Bereich der "
+"Heimassistenz, beispielsweise das Tracken & Folgen von Personen oder "
+"Beschaffen, Tragen und Übergabe von Gegenständen. In Vorbereitung auf den"
+" RoboCup German Open und Robocup World Championship wurden "
+"Wettkampfszenarien nachgestellt (beide Wettkämpfe leider abgesagt)."
+
+#: templates/resume.template.html:92
+msgid "Special team role: Quality Management"
+msgstr "Teamfunktion: Qualitätsmanagement"
+
+#: templates/resume.template.html:94
+msgid "Verification of compliance of coding standards and style guides"
+msgstr "Verifizierung der Einhaltung von Coding-Standards und Style-Guides"
+
+#: templates/resume.template.html:95
+msgid "Writing of documentations"
+msgstr "Schreiben von Dokumentationen"
+
+#: templates/resume.template.html:97
+msgid ""
+"Conduction and supervision of tests according to official tournament "
+"rules and ratings"
+msgstr ""
+"Durchführung und Beaufsichtigung von Tests basierend auf offiellen "
+"Turnierregeln und Bewertungstabellen"
+
+#: templates/resume.template.html:111
+msgid ""
+"Development of a mockup / prototype for a driver assistance / "
+"recommendation system"
+msgstr ""
+"Entwicklung eines Prototypen für ein Fahrerassistenzsystem / "
+"Empfehlungssystem"
+
+#: templates/resume.template.html:112
+msgid ""
+"Work with C++ and Bash-Shell on Ubuntu, compilation for target "
+"infotainment system hardware"
+msgstr ""
+"Arbeit mit C++ und Bash unter Ubuntu, Kompilierung und Ausführung direkt "
+"auf Zielhardware / Infotainmentsystem"
+
+#: templates/resume.template.html:113
+msgid "Git, Jira for version control, project management"
+msgstr "Git, Jira für Versionskontrolle, Projektmanagement"
+
+#: templates/resume.template.html:114
+msgid "Close coordination with team in India"
+msgstr "Enge Zusammenarbeit mit Team in Indien"
+
+#: templates/resume.template.html:115
+msgid "Setup and assistance at exhibitions"
+msgstr "Aufbau und Assistenz auf Ausstellungen"
+
+#: templates/resume.template.html:116
+msgid "Daily stand-up meetings in small team to discuss progress"
+msgstr "Tägliche Stand-up-meetings in kleinem Team um Fortschritt zu besprechen"
+
+#: templates/resume.template.html:123
+msgid "Skills"
+msgstr "Kenntnisse"
+
+#: templates/resume.template.html:127
+msgid "Most used programming languages / technologies"
+msgstr "Meistgenutzte Programmiersprachen und Technologien"
+
+#: templates/resume.template.html:132
+msgid "incl. and preferably modern C++ 17 and 20"
+msgstr "inkl. und vorzugsweise modernes C++ 17 und 20"
+
+#: templates/resume.template.html:142
+msgid "Spoken languages"
+msgstr "Gesprochene Sprachen"
+
+#: templates/resume.template.html:147
+msgid "German (native)"
+msgstr "Deutsch (Muttersprache)"
+
+#: templates/resume.template.html:149
+msgid ""
+"English (fluent)<br>Written english master thesis + seminar work / "
+"presentations + Bosch internship"
+msgstr ""
+"Englisch (fließend)<br>Englische Masterarbeit + Seminararbeiten und "
+"-präsentationen + Bosch Praktikum"
+
+#: templates/resume.template.html:151
+msgid "Japanese as a hobby (so far only basic/interm. reading)"
+msgstr "Japanisch als Hobby (bisher nur einfache/intermediäre Lesekenntnisse)"
+
+#: templates/resume.template.html:156
+msgid "See some of my recent work"
+msgstr "Zu meinen aktuellen Projekten"
+
+#~ msgid ""
+#~ "Reconstruction of the painting is "
+#~ "divided into two stages. For a "
+#~ "fresco, the first step is to apply"
+#~ " multiple layers of wet lime plaster"
+#~ " that need to dry. However, for "
+#~ "this game, only a single layer "
+#~ "needs to be applied without waiting "
+#~ "for it to dry &#128521;.<br> The "
+#~ "second stage involves re-coloring the"
+#~ " painting in a \"color by "
+#~ "numbers\"-like manner. This time, a "
+#~ "render target (mask) is required for "
+#~ "each of the fields that are able"
+#~ " to be filled with color. To "
+#~ "prevent pixel-precise accuracy for "
+#~ "completing the painting, a C++ script"
+#~ " is used to check whether a "
+#~ "mask is \"fully colored\" by introducing"
+#~ " a threshold, e.g., 80% of the "
+#~ "pixels need to be filled for the"
+#~ " painting to be considered complete."
+#~ msgstr ""
+#~ "Die Rekonstruktion des Gemäldes ist in"
+#~ " zwei Stufen unterteilt. Für ein "
+#~ "Fresko ist es zunächst erforderlich, "
+#~ "mehrere Schichten Kalkputz aufzutragen, der"
+#~ " nach jeder Schicht trocknen muss. In"
+#~ " diesem Spiel muss jedoch nur eine"
+#~ " Schicht aufgetragen werden ohne "
+#~ "nachträglicher Wartezeit &#128521;.<br> In der"
+#~ " zweiten Stufe wird das Gemälde im"
+#~ " Prinzip von Malen nach Zahlen "
+#~ "nachgefärbt. Um zu verhindern, dass "
+#~ "alles pixelgenau ausgefüllt werden muss, "
+#~ "wird ein C++-Script eingesetzt um zu "
+#~ "überprüfen, wann der Großteil einer "
+#~ "Fläche ausgemalt wurde."
+
+#~ msgid ""
+#~ "A naive approach for rendering "
+#~ "geometrical objects in OpenGL is "
+#~ "traversing a list and changing state "
+#~ "and parameters for every object "
+#~ "encountered in that list. This turns "
+#~ "out to be ineffective, resulting in "
+#~ "hotspots at OpenGL functions which "
+#~ "require more than 50% of the "
+#~ "application's available time, leaving less "
+#~ "time for other subsystems of a "
+#~ "graphics engine. Multiple techniques are "
+#~ "considered and their change performance "
+#~ "evaluated: frustum culling, spatial data "
+#~ "structures, automated batching of similar "
+#~ "objects + multi draws, component "
+#~ "sorting, dirty flags to avoid re-"
+#~ "computation of unchanged values."
+#~ msgstr ""
+#~ "Ein naiver Ansatz für das Rendern "
+#~ "von Objekten in OpenGL ist das "
+#~ "Durchlaufen einer Liste, wodurch Zustand "
+#~ "und Konfiguration für jedes Objekt "
+#~ "geändert werden muss. Dies führt zu "
+#~ "einer starken Ineffizienz, da mehr als"
+#~ " 50% der verfügbaren Anwendungszeit zur "
+#~ "Ausführung von OpenGL-Funktionen erforderlich"
+#~ " wird und damit weniger Zeit für "
+#~ "den Quellcode der Grafikengine übrig "
+#~ "bleibt. In der Arbeit werden mehrere "
+#~ "Techniken und ihre Auswirkung auf die"
+#~ " Performance evaluiert. Dazu gehören "
+#~ "Frustum Culling, räumliche Datenstrukturen, "
+#~ "automatisches Batching von ähnlichen Objekten"
+#~ " und anschließenden Multidraws, Sortieren "
+#~ "von Objekten ung Dirty-Flags, um "
+#~ "Neuberechnungen von unveränderten Werten zu"
+#~ " vermeiden."
+
