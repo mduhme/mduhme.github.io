@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-03 18:52+0100\n"
+"POT-Creation-Date: 2021-02-07 12:36+0100\n"
 "PO-Revision-Date: 2021-02-02 21:13+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -51,21 +51,17 @@ msgstr ""
 msgid "My Projects"
 msgstr ""
 
-#: templates/nav.template.html:5 templates/nav.template.html:19
+#: templates/nav.template.html:5 templates/nav.template.html:24
 #: templates/resume.template.html:5
 msgid "Resume"
 msgstr ""
 
-#: templates/nav.template.html:6 templates/nav.template.html:20
+#: templates/nav.template.html:6 templates/nav.template.html:25
 #: templates/projects.template.html:5
 msgid "Projects"
 msgstr ""
 
-#: templates/nav.template.html:7
-msgid "Contact"
-msgstr ""
-
-#: templates/nav.template.html:18
+#: templates/nav.template.html:23
 msgid "Top"
 msgstr ""
 
@@ -582,7 +578,19 @@ msgid "University of Koblenz"
 msgstr ""
 
 #: templates/resume.template.html:23
+msgid "Image Processing"
+msgstr ""
+
+#: templates/resume.template.html:23
+msgid "Computer Vision"
+msgstr ""
+
+#: templates/resume.template.html:23
 msgid "Robotics"
+msgstr ""
+
+#: templates/resume.template.html:23
+msgid "Computer Graphics"
 msgstr ""
 
 #: templates/resume.template.html:23
@@ -788,5 +796,8 @@ msgstr ""
 #~ "objects + multi draws, component "
 #~ "sorting, dirty flags to avoid re-"
 #~ "computation of unchanged values."
+#~ msgstr ""
+
+#~ msgid "Contact"
 #~ msgstr ""
 

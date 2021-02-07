@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-03 18:52+0100\n"
+"POT-Creation-Date: 2021-02-07 12:36+0100\n"
 "PO-Revision-Date: 2021-02-02 20:44+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -52,21 +52,17 @@ msgstr "Lebenslauf"
 msgid "My Projects"
 msgstr "Projekte"
 
-#: templates/nav.template.html:5 templates/nav.template.html:19
+#: templates/nav.template.html:5 templates/nav.template.html:24
 #: templates/resume.template.html:5
 msgid "Resume"
 msgstr "Lebenslauf"
 
-#: templates/nav.template.html:6 templates/nav.template.html:20
+#: templates/nav.template.html:6 templates/nav.template.html:25
 #: templates/projects.template.html:5
 msgid "Projects"
 msgstr "Projekte"
 
-#: templates/nav.template.html:7
-msgid "Contact"
-msgstr "Kontakt"
-
-#: templates/nav.template.html:18
+#: templates/nav.template.html:23
 msgid "Top"
 msgstr "Nach oben"
 
@@ -810,8 +806,20 @@ msgid "University of Koblenz"
 msgstr "Universität Koblenz"
 
 #: templates/resume.template.html:23
+msgid "Image Processing"
+msgstr "Bildverarbeitung"
+
+#: templates/resume.template.html:23
+msgid "Computer Vision"
+msgstr "Computer-Vision"
+
+#: templates/resume.template.html:23
 msgid "Robotics"
 msgstr "Robotik"
+
+#: templates/resume.template.html:23
+msgid "Computer Graphics"
+msgstr "Computergrafik"
 
 #: templates/resume.template.html:23
 msgid "Operating Systems"
@@ -900,7 +908,7 @@ msgid ""
 "Conduction and supervision of tests according to official tournament "
 "rules and ratings"
 msgstr ""
-"Durchführung und Beaufsichtigung von Tests basierend auf offiellen "
+"Durchführung und Beaufsichtigung von Tests basierend auf offiziellen "
 "Turnierregeln und Bewertungstabellen"
 
 #: templates/resume.template.html:111
@@ -933,7 +941,7 @@ msgstr "Aufbau und Assistenz auf Ausstellungen"
 
 #: templates/resume.template.html:116
 msgid "Daily stand-up meetings in small team to discuss progress"
-msgstr "Tägliche Stand-up-meetings in kleinem Team um Fortschritt zu besprechen"
+msgstr "Tägliche Stand-up-meetings in kleinem Team, um Fortschritt zu besprechen"
 
 #: templates/resume.template.html:123
 msgid "Skills"
@@ -1048,4 +1056,7 @@ msgstr "Zu meinen aktuellen Projekten"
 #~ "von Objekten ung Dirty-Flags, um "
 #~ "Neuberechnungen von unveränderten Werten zu"
 #~ " vermeiden."
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
 
