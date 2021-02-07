@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-03 18:52+0100\n"
+"POT-Creation-Date: 2021-02-07 15:48+0100\n"
 "PO-Revision-Date: 2021-02-02 20:44+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -52,21 +52,17 @@ msgstr "Lebenslauf"
 msgid "My Projects"
 msgstr "Projekte"
 
-#: templates/nav.template.html:5 templates/nav.template.html:19
+#: templates/nav.template.html:5 templates/nav.template.html:24
 #: templates/resume.template.html:5
 msgid "Resume"
 msgstr "Lebenslauf"
 
-#: templates/nav.template.html:6 templates/nav.template.html:20
+#: templates/nav.template.html:6 templates/nav.template.html:25
 #: templates/projects.template.html:5
 msgid "Projects"
 msgstr "Projekte"
 
-#: templates/nav.template.html:7
-msgid "Contact"
-msgstr "Kontakt"
-
-#: templates/nav.template.html:18
+#: templates/nav.template.html:23
 msgid "Top"
 msgstr "Nach oben"
 
@@ -123,8 +119,8 @@ msgid ""
 "augmented by simply appending additional nodes representing IMU (or other"
 " modalities)."
 msgstr ""
-"Das Bild zeigt eine der vorgeschlagenen Fusionsverfahren von Skelettdaten"
-" (schwarze Knoten), erhalten durch OpenPose, Kinect SDK, o.ä, und "
+"Das Bild zeigt eines der vorgeschlagenen Fusionsverfahren von Skelettdaten"
+" (schwarze Knoten), erhalten durch OpenPose, Kinect SDK o.ä. und "
 "Signalen von getragenen Sensoren, wie z.B. Beschleunigungsmessern und "
 "Gyroskopen (rote Knoten). Falls beide Modalitäten durch dreidimensionale "
 "Werte repräsentiert sind, kann der Skelettgraph durch Anhängen weiterer "
@@ -416,8 +412,8 @@ msgstr ""
 " und einem großen Quadrat leicht vermieden werden. Die Vertikalität "
 "entsteht durch Sampling einer Heightmap. Obwohl das Schließen von Cracks "
 "trivial ist, führt die Verwendung von Quadtrees für LOD zu einem starken "
-"Effekt von Vertex-Popping sobald sich vier kleine Flächen zu einer "
-"größeren Fläche zusammenschließen, oder umgekehrt. Hier ist ein Video zum"
+"Effekt von Vertex-Popping, sobald sich vier kleine Flächen zu einer "
+"größeren Fläche zusammenschließen oder umgekehrt. Hier ist ein Video zum"
 " Projekt:"
 
 #: templates/projects.template.html:293
@@ -441,7 +437,7 @@ msgstr ""
 "Beim Junge-oder-Mädchen-Problem geht es darum, basierend auf einer "
 "Aussage über eine Zweikindfamilie, die Wahrscheinlichkeit zu ermitteln, "
 "zu der beide Kinder Jungen oder beide Kinder Mädchen sind. Bei "
-"Beantwortungs der Frage gehen die Meinungen auseinander. Im Vordergrund "
+"Beantwortung der Frage gehen die Meinungen auseinander. Im Vordergrund "
 "dabei steht das Problem, das Menschen haben, wenn sie mit bedingten "
 "Wahrscheinlichkeiten konfrontiert werden. Dabei wird meist ein simples "
 "mentales Modell des Problems angewandt, das jedoch nicht zu einer "
@@ -500,7 +496,7 @@ msgid ""
 msgstr ""
 "Herr Schmitt ist der Vater von zwei Kindern. Wir treffen ihn während "
 "eines Spaziergangs mit einem Jungen, den er stolz als seinen Sohn "
-"vorstellt. Wie hoch ist die Wahrscheinlichkeit, dass Herr Schmitts "
+"vorstellt. Wie hoch ist die Wahrscheinlichkeit, dass Herrn Schmitts "
 "zweites Kind auch ein Junge ist? Antwort"
 
 #: templates/projects.template.html:319
@@ -511,9 +507,9 @@ msgid ""
 "Smith's other child is also a boy? Answer"
 msgstr ""
 "Wir treffen Herrn Schmitt (von dem wir wissen, dass er zwei Kinder hat) "
-"während eines Spaziergangs mit einem Jungen. Diese mal ist er mit seiner "
+"während eines Spaziergangs mit einem Jungen. Dieses Mal ist er mit seiner "
 "Aussage ausführlicher und stellt ihn als sein ältestes Kind vor. Wie hoch"
-" ist die Wahrscheinlichkeit, dass Herr Schmitts zweites Kind auch ein "
+" ist die Wahrscheinlichkeit, dass Herrn Schmitts zweites Kind auch ein "
 "Junge ist? Antwort"
 
 #: templates/projects.template.html:324
@@ -555,7 +551,7 @@ msgstr ""
 "und einer Wahrscheinlichkeitsdichtefunktion (PDF), welche die Verteilung "
 "von inzidenten Lichtrichtungen definiert, approximiert werden. Angenommen"
 " die PDF entspricht einer Gleichverteilung, dann ist die "
-"Wahrscheinlichkeit zu der ein Lichtstahl aus einer bestimmten Richtung "
+"Wahrscheinlichkeit, zu der ein Lichtstahl aus einer bestimmten Richtung "
 "kommen kann, für alle Richtungen gleich. Dies führt zu einer starken "
 "Varianz für MCI und wäre für stark reflektierende Oberflächen "
 "ineffizient."
@@ -571,7 +567,7 @@ msgid ""
 msgstr ""
 "Weil MCI nur mit <code>O(n<sup>-1/2</sup>)</code> zu einem idealen "
 "Ergebnis konvergiert, werden für eine Halbierung des Fehlers viermal so "
-"viele Proben benötigt. Importance Sampling ist ein Verfahren um gezielt "
+"viele Proben benötigt. Importance Sampling ist ein Verfahren, um gezielt "
 "Proben zu entnehmen, durch die die Varianz bei MCI möglichst gering "
 "bleibt, was dazu führt, dass Bildrauschen beim Rendering reduziert wird. "
 "Die Abbildung zeigt Sampling einer Gleichverteilung (links) und Sampling "
@@ -628,7 +624,6 @@ msgstr ""
 "unter anderem auch bei der Unity Engine zum Einsatz kommt."
 
 #: templates/projects.template.html:439
-#, fuzzy
 msgid "bachelor-thesis-desc-2"
 msgstr ""
 "Ein naiver Ansatz für das Rendern von Objekten in OpenGL ist das "
@@ -639,7 +634,7 @@ msgstr ""
 " Grafikengine übrig bleibt. In der Arbeit werden mehrere Techniken und "
 "ihre Auswirkung auf die Performance evaluiert. Dazu gehören Frustum "
 "Culling, räumliche Datenstrukturen, automatisches Batching von ähnlichen "
-"Objekten und anschließenden Multidraws, Sortieren von Objekten ung Dirty-"
+"Objekten und anschließenden Multidraws, Sortieren von Objekten und Dirty-"
 "Flags, um Neuberechnungen von unveränderten Werten zu vermeiden."
 
 #: templates/projects.template.html:485
@@ -686,7 +681,7 @@ msgstr ""
 "Aktualisierung neu erzeugt wird. Der Nutzer wählt einen Pinsel (zum "
 "Beispiel ein 5x5 Quadrat wie durch den grünen Bereich im Bild "
 "verdeutlicht) und wendet ihn durch Zeigen auf das Bild an. Dabei wird ein"
-" Strahl auf das Mesh projiziert um den Eingabeschnittpunkt zu ermitteln. "
+" Strahl auf das Mesh projiziert, um den Eingabeschnittpunkt zu ermitteln. "
 "Durch vertikale Bewegungen des Joysticks kann dann durch den Pinsel die "
 "Intensität des Pixelbereichs angepasst werden."
 
@@ -810,8 +805,20 @@ msgid "University of Koblenz"
 msgstr "Universität Koblenz"
 
 #: templates/resume.template.html:23
+msgid "Image Processing"
+msgstr "Bildverarbeitung"
+
+#: templates/resume.template.html:23
+msgid "Computer Vision"
+msgstr "Computer-Vision"
+
+#: templates/resume.template.html:23
 msgid "Robotics"
 msgstr "Robotik"
+
+#: templates/resume.template.html:23
+msgid "Computer Graphics"
+msgstr "Computergrafik"
 
 #: templates/resume.template.html:23
 msgid "Operating Systems"
@@ -875,13 +882,14 @@ msgid ""
 "Implementation of human-robot-interactions in the context of home "
 "assistance, such as people tracking & following and item retrieval, "
 "carrying and handover, in preparation for RoboCup German Open and RoboCup"
-" World Championship (sadly both cancelled)"
+" World Championship (sadly both cancelled due to the pandemic)"
 msgstr ""
 "Implementierung von Mensch-Roboter-Interaktionen im Bereich der "
 "Heimassistenz, beispielsweise das Tracken & Folgen von Personen oder "
 "Beschaffen, Tragen und Übergabe von Gegenständen. In Vorbereitung auf den"
 " RoboCup German Open und Robocup World Championship wurden "
-"Wettkampfszenarien nachgestellt (beide Wettkämpfe leider abgesagt)."
+"Wettkampfszenarien nachgestellt (beide Wettkämpfe leider aufgrund der "
+"Pandemie abgesagt)"
 
 #: templates/resume.template.html:92
 msgid "Special team role: Quality Management"
@@ -900,7 +908,7 @@ msgid ""
 "Conduction and supervision of tests according to official tournament "
 "rules and ratings"
 msgstr ""
-"Durchführung und Beaufsichtigung von Tests basierend auf offiellen "
+"Durchführung und Beaufsichtigung von Tests basierend auf offiziellen "
 "Turnierregeln und Bewertungstabellen"
 
 #: templates/resume.template.html:111
@@ -933,7 +941,7 @@ msgstr "Aufbau und Assistenz auf Ausstellungen"
 
 #: templates/resume.template.html:116
 msgid "Daily stand-up meetings in small team to discuss progress"
-msgstr "Tägliche Stand-up-meetings in kleinem Team um Fortschritt zu besprechen"
+msgstr "Tägliche Stand-up-meetings in kleinem Team, um Fortschritt zu besprechen"
 
 #: templates/resume.template.html:123
 msgid "Skills"
@@ -1048,4 +1056,7 @@ msgstr "Zu meinen aktuellen Projekten"
 #~ "von Objekten ung Dirty-Flags, um "
 #~ "Neuberechnungen von unveränderten Werten zu"
 #~ " vermeiden."
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
 

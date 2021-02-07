@@ -11,7 +11,7 @@ def render_page(env: jinja2.Environment, name: str, **values) -> str:
 def write_main_page(env: jinja2.Environment, lang: list, main_lang: int, file_prefix: str):
     other_lang = lang[(main_lang + 1) % len(lang)]
     nav_content = render_page(env, "nav", other_lang=other_lang[0],
-                              lang_dest=os.path.relpath(other_lang[1], file_prefix))
+                              lang_dest=os.path.relpath(other_lang[1], file_prefix).replace("\\", "/"))
     home_content = render_page(env, "home")
     resume_content = render_page(env, "resume")
     projects_content = render_page(env, "projects")
