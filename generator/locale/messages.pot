@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-07 12:36+0100\n"
+"POT-Creation-Date: 2021-02-07 15:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -392,7 +392,7 @@ msgid "Work on two much-rewarded service robots as part of a research internship
 msgstr ""
 
 #: templates/resume.template.html:89
-msgid "Implementation of human-robot-interactions in the context of home assistance, such as people tracking & following and item retrieval, carrying and handover, in preparation for RoboCup German Open and RoboCup World Championship (sadly both cancelled)"
+msgid "Implementation of human-robot-interactions in the context of home assistance, such as people tracking & following and item retrieval, carrying and handover, in preparation for RoboCup German Open and RoboCup World Championship (sadly both cancelled due to the pandemic)"
 msgstr ""
 
 #: templates/resume.template.html:92
