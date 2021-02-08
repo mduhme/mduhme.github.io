@@ -300,7 +300,7 @@
                             </div>
                         </div>
                         <p>
-                            Das Bild zeigt eine der vorgeschlagenen Fusionsverfahren von Skelettdaten (schwarze Knoten), erhalten durch OpenPose, Kinect SDK, o.ä, und Signalen von getragenen Sensoren, wie z.B. Beschleunigungsmessern und Gyroskopen (rote Knoten). Falls beide Modalitäten durch dreidimensionale Werte repräsentiert sind, kann der Skelettgraph durch Anhängen weiterer Knoten (von IMU oder anderen Modalitäten) augmentiert werden.
+                            Das Bild zeigt eines der vorgeschlagenen Fusionsverfahren von Skelettdaten (schwarze Knoten), erhalten durch OpenPose, Kinect SDK o.ä. und Signalen von getragenen Sensoren, wie z.B. Beschleunigungsmessern und Gyroskopen (rote Knoten). Falls beide Modalitäten durch dreidimensionale Werte repräsentiert sind, kann der Skelettgraph durch Anhängen weiterer Knoten (von IMU oder anderen Modalitäten) augmentiert werden.
                         </p>
                         <p>
                             Alle Modelle sind in PyTorch 1.6, Python version 3.8 und CUDA 10.2 implementiert worden. Für die Berechnungen und Experimente wurde eine Nvidia RTX 2080 verwendet. Um Reproduzierbarkeit zu garantieren, werden alle Trainingsdurchläufe mit einem festen Seed initialisiert.
@@ -508,7 +508,7 @@
                     </div>
                     <div class="proj-additional-content">
                         <p>
-                            Durch die Nachbarschaftsinformationen können Cracks zwischen zwei kleinen und einem großen Quadrat leicht vermieden werden. Die Vertikalität entsteht durch Sampling einer Heightmap. Obwohl das Schließen von Cracks trivial ist, führt die Verwendung von Quadtrees für LOD zu einem starken Effekt von Vertex-Popping sobald sich vier kleine Flächen zu einer größeren Fläche zusammenschließen, oder umgekehrt. Hier ist ein Video zum Projekt:
+                            Durch die Nachbarschaftsinformationen können Cracks zwischen zwei kleinen und einem großen Quadrat leicht vermieden werden. Die Vertikalität entsteht durch Sampling einer Heightmap. Obwohl das Schließen von Cracks trivial ist, führt die Verwendung von Quadtrees für LOD zu einem starken Effekt von Vertex-Popping, sobald sich vier kleine Flächen zu einer größeren Fläche zusammenschließen oder umgekehrt. Hier ist ein Video zum Projekt:
                         </p>
                         <div>
                             <video src="/video/terrainrendering.mp4" poster="/images/terrainrendering.poster.jpg" controls
@@ -559,10 +559,10 @@
                         <h5>Aussagen 3 und 4</h5>
                         <ol start="3">
                             <li>
-                                Herr Schmitt ist der Vater von zwei Kindern. Wir treffen ihn während eines Spaziergangs mit einem Jungen, den er stolz als seinen Sohn vorstellt. Wie hoch ist die Wahrscheinlichkeit, dass Herr Schmitts zweites Kind auch ein Junge ist? Antwort: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/2</span></label>
+                                Herr Schmitt ist der Vater von zwei Kindern. Wir treffen ihn während eines Spaziergangs mit einem Jungen, den er stolz als seinen Sohn vorstellt. Wie hoch ist die Wahrscheinlichkeit, dass Herrn Schmitts zweites Kind auch ein Junge ist? Antwort: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/2</span></label>
                             </li>
                             <li>
-                                Wir treffen Herrn Schmitt (von dem wir wissen, dass er zwei Kinder hat) während eines Spaziergangs mit einem Jungen. Diese mal ist er mit seiner Aussage ausführlicher und stellt ihn als sein ältestes Kind vor. Wie hoch ist die Wahrscheinlichkeit, dass Herr Schmitts zweites Kind auch ein Junge ist? Antwort: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/2</span></label>
+                                Wir treffen Herrn Schmitt (von dem wir wissen, dass er zwei Kinder hat) während eines Spaziergangs mit einem Jungen. Dieses Mal ist er mit seiner Aussage ausführlicher und stellt ihn als sein ältestes Kind vor. Wie hoch ist die Wahrscheinlichkeit, dass Herrn Schmitts zweites Kind auch ein Junge ist? Antwort: <label class="spoiler-text"><input type="checkbox"><span>P(BB) = 1/2</span></label>
                             </li>
                         </ol>
 
@@ -611,7 +611,7 @@
                         Die <a href="https://de.wikipedia.org/wiki/Rendergleichung">Rendergleichung</a> kann mithilfe von Monte-Carlo-Integration (MCI) mit N Proben (Samples) und einer Wahrscheinlichkeitsdichtefunktion (PDF), welche die Verteilung von inzidenten Lichtrichtungen definiert, approximiert werden. Angenommen die PDF entspricht einer Gleichverteilung, dann ist die Wahrscheinlichkeit, zu der ein Lichtstahl aus einer bestimmten Richtung kommen kann, für alle Richtungen gleich. Dies führt zu einer starken Varianz für MCI und wäre für stark reflektierende Oberflächen ineffizient.
                     </div>
                     <div class="proj-additional-content">
-                        Weil MCI nur mit <code>O(n<sup>-1/2</sup>)</code> zu einem idealen Ergebnis konvergiert, werden für eine Halbierung des Fehlers viermal so viele Proben benötigt. Importance Sampling ist ein Verfahren um gezielt Proben zu entnehmen, durch die die Varianz bei MCI möglichst gering bleibt, was dazu führt, dass Bildrauschen beim Rendering reduziert wird. Die Abbildung zeigt Sampling einer Gleichverteilung (links) und Sampling einer kosinusgewichteten Verteilung (rechts).
+                        Weil MCI nur mit <code>O(n<sup>-1/2</sup>)</code> zu einem idealen Ergebnis konvergiert, werden für eine Halbierung des Fehlers viermal so viele Proben benötigt. Importance Sampling ist ein Verfahren, um gezielt Proben zu entnehmen, durch die die Varianz bei MCI möglichst gering bleibt, was dazu führt, dass Bildrauschen beim Rendering reduziert wird. Die Abbildung zeigt Sampling einer Gleichverteilung (links) und Sampling einer kosinusgewichteten Verteilung (rechts).
                     </div>
                     <div class="proj-view-more proj-expand">
                         <i class="fas icon solid fa-caret-down"></i>
@@ -682,7 +682,7 @@
                         Im Rahmen meiner Bachelorarbeit entwickelte ich eine kleine Echtzeit-Grafikengine mit OpenGL und Java (JOGL). Da OpenGL ein Zustandsautomat ist, war das Ziel, eine effiziente Architektur zu schaffen und Techniken zu implementieren, um die Anzahl der Zustandswechsel zu reduzieren. Die Architektur basiert auf dem Entity-component-system-Entwurfsmuster, das unter anderem auch bei der Unity Engine zum Einsatz kommt.
                     </div>
                     <div class="proj-additional-content">
-                        bachelor-thesis-desc-2
+                        Ein naiver Ansatz für das Rendern von Objekten in OpenGL ist das Durchlaufen einer Liste, wodurch Zustand und Konfiguration für jedes Objekt geändert werden muss. Dies führt zu einer starken Ineffizienz, da mehr als 50% der verfügbaren Anwendungszeit zur Ausführung von OpenGL-Funktionen erforderlich wird und damit weniger Zeit für den Quellcode der Grafikengine übrig bleibt. In der Arbeit werden mehrere Techniken und ihre Auswirkung auf die Performance evaluiert. Dazu gehören Frustum Culling, räumliche Datenstrukturen, automatisches Batching von ähnlichen Objekten und anschließenden Multidraws, Sortieren von Objekten ung Dirty-Flags, um Neuberechnungen von unveränderten Werten zu vermeiden.
 
                         <div class="image featured">
                             <img class="lazy img-shadow"
@@ -734,7 +734,7 @@
                     </div>
                     <div class="proj-additional-content">
                         <p>
-                            Das Bild (nur Grauwertbild) wird als 3D-Repräsentation gerendert, wobei die Pixelintensitäten für die vertikale Verschiebung sorgen. Aus Performancegründen wird das 3D-Bild nicht aus individuellen Quadern zusammengesetzt, sondern als ein komplettes Mesh gerendert, das für jede Aktualisierung neu erzeugt wird. Der Nutzer wählt einen Pinsel (zum Beispiel ein 5x5 Quadrat wie durch den grünen Bereich im Bild verdeutlicht) und wendet ihn durch Zeigen auf das Bild an. Dabei wird ein Strahl auf das Mesh projiziert um den Eingabeschnittpunkt zu ermitteln. Durch vertikale Bewegungen des Joysticks kann dann durch den Pinsel die Intensität des Pixelbereichs angepasst werden.
+                            Das Bild (nur Grauwertbild) wird als 3D-Repräsentation gerendert, wobei die Pixelintensitäten für die vertikale Verschiebung sorgen. Aus Performancegründen wird das 3D-Bild nicht aus individuellen Quadern zusammengesetzt, sondern als ein komplettes Mesh gerendert, das für jede Aktualisierung neu erzeugt wird. Der Nutzer wählt einen Pinsel (zum Beispiel ein 5x5 Quadrat wie durch den grünen Bereich im Bild verdeutlicht) und wendet ihn durch Zeigen auf das Bild an. Dabei wird ein Strahl auf das Mesh projiziert, um den Eingabeschnittpunkt zu ermitteln. Durch vertikale Bewegungen des Joysticks kann dann durch den Pinsel die Intensität des Pixelbereichs angepasst werden.
                         </p>
                         <div class="image featured image-group">
                             <img class="lazy better-contrast img-shadow"
