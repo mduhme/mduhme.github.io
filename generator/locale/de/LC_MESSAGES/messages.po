@@ -634,7 +634,7 @@ msgstr ""
 " Grafikengine übrig bleibt. In der Arbeit werden mehrere Techniken und "
 "ihre Auswirkung auf die Performance evaluiert. Dazu gehören Frustum "
 "Culling, räumliche Datenstrukturen, automatisches Batching von ähnlichen "
-"Objekten und anschließenden Multidraws, Sortieren von Objekten ung Dirty-"
+"Objekten und anschließenden Multidraws, Sortieren von Objekten und Dirty-"
 "Flags, um Neuberechnungen von unveränderten Werten zu vermeiden."
 
 #: templates/projects.template.html:485
