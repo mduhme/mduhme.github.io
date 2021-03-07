@@ -379,6 +379,15 @@ article:last-child {
   }
 }
 
+.home-bar-button {
+  margin-top: 10px;
+
+  > a {
+    min-width: 150px;
+    text-align: center;
+  }
+}
+
 /* Button */
 input[type="button"],
 input[type="submit"],

@@ -1213,6 +1213,14 @@ article:last-child {
   width: auto;
 }
 
+.home-bar-button {
+  margin-top: 10px;
+}
+.home-bar-button > a {
+  min-width: 150px;
+  text-align: center;
+}
+
 /* Button */
 input[type=button],
 input[type=submit],
