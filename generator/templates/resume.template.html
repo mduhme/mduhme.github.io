@@ -5,6 +5,33 @@
             <h2>{{gettext("Resume")}}</h2>
             <p><i>{{gettext("The places I worked and studied at.")}}</i></p>
         </header>
+
+        <div class="row aln-center port-group">
+            <div class="col-12">
+                <h3>{{gettext("Professional Experience")}}</h3>
+            </div>
+            <div class="col-6 col-12-small port-time">
+                <h4>
+                    Rheinmetall Electronics GmbH
+                </h4>
+                {{gettext("May")}} 2021 - {{gettext("Present")}}<br>
+                Bremen
+            </div>
+            <div class="col-6 col-12-small port-content">
+                <strong>{{gettext("Software Developer")}}</strong>
+                <ul>
+                    <li>{{gettext("Architectural design and development of software components for the cross-sectional HMI software with C++ and Qt")}}</li>
+                    <li>{{gettext("Management of CMake and Jenkins pipeline, Conan packages and documentation (Confluence) of the HMI software framework as well as person of contact for software architecture and technical questions")}}</li>
+                    <li>{{gettext("Definition of interfaces for data exchange with other software components using a proprietary protocol")}}</li>
+                    <li>{{gettext("Design and implementation of an analysis tool with a graphical user interface for the same data protocol")}}</li>
+                    <li>{{gettext("Implementation of interface adapters, including transfer of data from CAN, UDP, TCP, etc. to internal protocol")}}</li>
+                    <li>{{gettext("Deputy component responsibility (sprint planning via Jira, employee management, induction of new employees and trainees)")}}</li>
+                    <li>{{gettext("Support with software integration on different platforms (Windows, Ubuntu, CentOS, QNX)")}}</li>
+                    <li>{{gettext("Primary technologies")}}: C++, Python, Qt, CMake, Git, Conan, Jenkins, Jira, Confluence</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="row aln-center port-group">
             <div class="col-12">
                 <h3>{{gettext("Education")}}</h3>
@@ -120,6 +147,46 @@
 
         <div class="row aln-center port-group">
             <div class="col-12">
+                <h3>{{gettext("Publications")}}</h3>
+            </div>
+            <div class="col-6 col-12-small port-time port-end">
+                <h4>
+                   Fusion-GCN: Multimodal Action Recognition using Graph Convolutional Networks
+                </h4>
+                Michael Duhme, Raphael Memmesheimer, Dietrich Paulus<br>
+                2021
+            </div>
+            <div class="col-6 col-12-small port-content port-end">
+                <ul>
+                    <li>{{gettext("Publication based on by master thesis in DAGM GCPR 2021 and release of the source code on GitHub")}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row aln-center port-group">
+            <div class="col-12">
+                <h3>{{gettext("Certificates")}}</h3>
+            </div>
+            <div class="col-6 col-12-small port-time port-end">
+                <h4>
+                    {{gettext("iSAQB Certified Professional for Software Architecture")}}
+                </h4>
+                Apr. 2023<br>
+                Bremen
+            </div>
+            <div class="col-6 col-12-small port-content port-end">
+                {{gettext("Certification for software archicture foundation level")}}
+                <ul>
+                    <li>{{gettext("Identification of software architecture requirements and goals")}}</li>
+                    <li>{{gettext("Identification of non-functional requirements")}}</li>
+                    <li>{{gettext("Design of software components as well as their interfaces and dependencies")}}</li>
+                    <li>{{gettext("Documentation and communication of software architectures")}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row aln-center port-group">
+            <div class="col-12">
                 <h3>{{gettext("Skills")}}</h3>
             </div>
             <div class="col-6 col-12-small port-time">
@@ -129,11 +196,11 @@
             </div>
             <div class="col-6 col-12-small port-content">
                 <ul>
-                    <li>C++ ({{gettext("incl. and preferably modern C++ 17 and 20")}}), Python, Java, C#, Javascript, Matlab, GLSL</li>
-                    <li>Visual Studio, Jetbrains IDEs, Git, CMake</li>
+                    <li>C++ ({{gettext("incl. and preferably modern C++ 17 or newer")}}), Python, Java, C#, Javascript</li>
+                    <li>Visual Studio, Jetbrains IDEs, Git, CMake, Conan, Jenkins</li>
                     <li>Windows, Ubuntu</li>
-                    <li>OpenCV, OpenGL, Numpy, Tensorflow, PyTorch, ROS, Unreal Engine, Unity Engine, Qt Widgets, WPF
-                        .NET, JavaFX
+                    <li>Qt5, OpenCV, OpenGL, Numpy, Tensorflow, PyTorch, ROS, Unreal Engine, Unity Engine, WPF
+                        .NET, JavaFX, ArcGIS
                     </li>
                 </ul>
             </div>
@@ -146,12 +213,12 @@
                 <ul>
                     <li>{{gettext("German (native)")}}</li>
                     <li>
-                        {{gettext("English (fluent)<br>Written english master thesis + seminar work / presentations + Bosch internship")}}
+                        {{gettext("English (fluent)")}}
                     </li>
-                    <li>{{gettext("Japanese as a hobby (so far only basic/interm. reading)")}}</li>
                 </ul>
             </div>
         </div>
+
         <footer>
             <a href="#projects" class="button large scrolly">{{gettext("See some of my recent work")}}</a>
         </footer>

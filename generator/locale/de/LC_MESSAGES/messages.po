@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-07 15:48+0100\n"
+"POT-Creation-Date: 2024-02-17 15:12+0100\n"
 "PO-Revision-Date: 2021-02-02 20:44+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: templates/footer.template.html:7
 msgid "Based on"
@@ -29,10 +29,13 @@ msgstr "Hi. Ich bin"
 #: templates/home.template.html:13
 msgid "description"
 msgstr ""
-"Ich stehe derzeit vor dem Abschluss meines Masterstudiums in "
-"Computervisualistik an der Universität Koblenz, durch das ich Wissen in "
-"den Bereichen <strong>Bildverarbeitung & Computer Vision</strong>, "
-"<strong>Machine Learning</strong>, <strong>Robotik</strong> und "
+"Ich arbeite derzeit als <strong>Softwareentwickler</strong> bei Rheinmetall Electronics "
+"hauptsächlich an der Entwicklung von grafischen Benutzerschnittstellen "
+"für Land- und Seefahrzeuge mithilfe von <strong>C++ und "
+"Qt</strong>.<br>Zuvor habe ich mein Masterstudium in Computervisualistik "
+"an der Universität Koblenz beendet, durch das ich Wissen in den Bereichen"
+" <strong>Bildverarbeitung & Computer Vision</strong>, <strong>Machine "
+"Learning</strong>, <strong>Robotik</strong> und "
 "<strong>Computergrafik</strong> erworben habe.<br>In Uni- und "
 "Hobbyprojekten sowie Praktika konnte ich Erfahrungen mit diversen Tools "
 "und Frameworks sammeln, darunter unter anderem <strong>Unreal "
@@ -40,15 +43,11 @@ msgstr ""
 "Insbesondere die Arbeit mit <strong>Python</strong> und <strong>modernem "
 "C++</strong> macht mir dabei Spaß."
 
-#: templates/home.template.html:17
-msgid "Feel free to contact me"
-msgstr "Gerne können Sie mich kontaktieren"
-
-#: templates/home.template.html:28
+#: templates/home.template.html:24
 msgid "My Resume"
 msgstr "Lebenslauf"
 
-#: templates/home.template.html:29
+#: templates/home.template.html:25
 msgid "My Projects"
 msgstr "Projekte"
 
@@ -119,11 +118,11 @@ msgid ""
 "augmented by simply appending additional nodes representing IMU (or other"
 " modalities)."
 msgstr ""
-"Das Bild zeigt eines der vorgeschlagenen Fusionsverfahren von Skelettdaten"
-" (schwarze Knoten), erhalten durch OpenPose, Kinect SDK o.ä. und "
-"Signalen von getragenen Sensoren, wie z.B. Beschleunigungsmessern und "
-"Gyroskopen (rote Knoten). Falls beide Modalitäten durch dreidimensionale "
-"Werte repräsentiert sind, kann der Skelettgraph durch Anhängen weiterer "
+"Das Bild zeigt eines der vorgeschlagenen Fusionsverfahren von "
+"Skelettdaten (schwarze Knoten), erhalten durch OpenPose, Kinect SDK o.ä. "
+"und Signalen von getragenen Sensoren, wie z.B. Beschleunigungsmessern und"
+" Gyroskopen (rote Knoten). Falls beide Modalitäten durch dreidimensionale"
+" Werte repräsentiert sind, kann der Skelettgraph durch Anhängen weiterer "
 "Knoten (von IMU oder anderen Modalitäten) augmentiert werden."
 
 #: templates/projects.template.html:60
@@ -413,8 +412,8 @@ msgstr ""
 "entsteht durch Sampling einer Heightmap. Obwohl das Schließen von Cracks "
 "trivial ist, führt die Verwendung von Quadtrees für LOD zu einem starken "
 "Effekt von Vertex-Popping, sobald sich vier kleine Flächen zu einer "
-"größeren Fläche zusammenschließen oder umgekehrt. Hier ist ein Video zum"
-" Projekt:"
+"größeren Fläche zusammenschließen oder umgekehrt. Hier ist ein Video zum "
+"Projekt:"
 
 #: templates/projects.template.html:293
 msgid "Research: Logic Puzzles - The Boy or Girl Paradox"
@@ -507,10 +506,10 @@ msgid ""
 "Smith's other child is also a boy? Answer"
 msgstr ""
 "Wir treffen Herrn Schmitt (von dem wir wissen, dass er zwei Kinder hat) "
-"während eines Spaziergangs mit einem Jungen. Dieses Mal ist er mit seiner "
-"Aussage ausführlicher und stellt ihn als sein ältestes Kind vor. Wie hoch"
-" ist die Wahrscheinlichkeit, dass Herrn Schmitts zweites Kind auch ein "
-"Junge ist? Antwort"
+"während eines Spaziergangs mit einem Jungen. Dieses Mal ist er mit seiner"
+" Aussage ausführlicher und stellt ihn als sein ältestes Kind vor. Wie "
+"hoch ist die Wahrscheinlichkeit, dass Herrn Schmitts zweites Kind auch "
+"ein Junge ist? Antwort"
 
 #: templates/projects.template.html:324
 msgid ""
@@ -574,8 +573,8 @@ msgstr ""
 "einer kosinusgewichteten Verteilung (rechts)."
 
 #: templates/projects.template.html:390
-msgid "Japanese-English Offline Dictionary and Learning App (WIP)"
-msgstr "Japanisch-Englisch Offline-Wörterbuch und Lernapp (WIP)"
+msgid "Japanese-English Offline Dictionary and Learning App"
+msgstr "Japanisch-Englisch Offline-Wörterbuch und Lernapp"
 
 #: templates/projects.template.html:392
 msgid ""
@@ -681,8 +680,8 @@ msgstr ""
 "Aktualisierung neu erzeugt wird. Der Nutzer wählt einen Pinsel (zum "
 "Beispiel ein 5x5 Quadrat wie durch den grünen Bereich im Bild "
 "verdeutlicht) und wendet ihn durch Zeigen auf das Bild an. Dabei wird ein"
-" Strahl auf das Mesh projiziert, um den Eingabeschnittpunkt zu ermitteln. "
-"Durch vertikale Bewegungen des Joysticks kann dann durch den Pinsel die "
+" Strahl auf das Mesh projiziert, um den Eingabeschnittpunkt zu ermitteln."
+" Durch vertikale Bewegungen des Joysticks kann dann durch den Pinsel die "
 "Intensität des Pixelbereichs angepasst werden."
 
 #: templates/projects.template.html:557
@@ -792,55 +791,133 @@ msgstr "Kontaktieren Sie mich"
 msgid "The places I worked and studied at."
 msgstr "Hier habe ich gelernt und gearbeitet."
 
-#: templates/resume.template.html:10
+#: templates/resume.template.html:11
+msgid "Professional Experience"
+msgstr "Berufserfahrung"
+
+#: templates/resume.template.html:17
+msgid "May"
+msgstr "Mai"
+
+#: templates/resume.template.html:17
+msgid "Present"
+msgstr "heute"
+
+#: templates/resume.template.html:21
+msgid "Software Developer"
+msgstr "Softwareentwickler"
+
+#: templates/resume.template.html:23
+msgid ""
+"Architectural design and development of software components for the "
+"cross-sectional HMI software with C++ and Qt"
+msgstr ""
+"Architektonische Weiterentwicklung und Umsetzung von Softwareanteilen der"
+" querschnittlichen HMI Software mit C++ und Qt"
+
+#: templates/resume.template.html:24
+msgid ""
+"Management of CMake and Jenkins pipeline, Conan packages and "
+"documentation (Confluence) of the HMI software framework as well as "
+"person of contact for software architecture and technical questions"
+msgstr ""
+"Verwaltung von CMake- und Jenkins-Pipeline, Conan-Paketen und "
+"Dokumentation (Confluence) des HMI Software-Frameworks sowie "
+"Ansprechpartner für Softwarearchitektur und technische Fragen"
+
+#: templates/resume.template.html:25
+msgid ""
+"Definition of interfaces for data exchange with other software components"
+" using a proprietary protocol"
+msgstr ""
+"Definition von Schnittstellen zum Datenaustausch mit anderen "
+"Softwarekomponenten mithilfe eines betriebseigenen Protokolls"
+
+#: templates/resume.template.html:26
+msgid ""
+"Design and implementation of an analysis tool with a graphical user "
+"interface for the same data protocol"
+msgstr ""
+"Konzeption und Umsetzung eines Analysetools mit grafischer Oberfläche für"
+" selbiges Datenprotokoll"
+
+#: templates/resume.template.html:27
+msgid ""
+"Implementation of interface adapters, including transfer of data from "
+"CAN, UDP, TCP, etc. to internal protocol"
+msgstr ""
+"Umsetzung von Schnittstellen-Adaptern,  Überführung von Daten aus u.a. "
+"CAN, UDP, TCP  auf internes Protokoll"
+
+#: templates/resume.template.html:28
+msgid ""
+"Deputy component responsibility (sprint planning via Jira, employee "
+"management, induction of new employees and trainees)"
+msgstr ""
+"Stellvertretende Komponentenverantwortung (Sprintplanung via Jira, "
+"Mitarbeitersteuerung, Einarbeitung neuer Mitarbeiter und Azubis)"
+
+#: templates/resume.template.html:29
+msgid ""
+"Support with software integration on different platforms (Windows, "
+"Ubuntu, CentOS, QNX)"
+msgstr ""
+"Unterstützung bei der Softwareintegration auf unterschiedlichen "
+"Platformen (Windows, Ubuntu, CentOS, QNX)"
+
+#: templates/resume.template.html:30
+msgid "Primary technologies"
+msgstr "Primäre Technologien"
+
+#: templates/resume.template.html:37
 msgid "Education"
 msgstr "Ausbildung"
 
-#: templates/resume.template.html:14
+#: templates/resume.template.html:41
 msgid "Computational Visualistics"
 msgstr "Computervisualistik"
 
-#: templates/resume.template.html:17 templates/resume.template.html:80
+#: templates/resume.template.html:44 templates/resume.template.html:107
 msgid "University of Koblenz"
 msgstr "Universität Koblenz"
 
-#: templates/resume.template.html:23
+#: templates/resume.template.html:50
 msgid "Image Processing"
 msgstr "Bildverarbeitung"
 
-#: templates/resume.template.html:23
+#: templates/resume.template.html:50
 msgid "Computer Vision"
 msgstr "Computer-Vision"
 
-#: templates/resume.template.html:23
+#: templates/resume.template.html:50
 msgid "Robotics"
 msgstr "Robotik"
 
-#: templates/resume.template.html:23
+#: templates/resume.template.html:50
 msgid "Computer Graphics"
 msgstr "Computergrafik"
 
-#: templates/resume.template.html:23
+#: templates/resume.template.html:50
 msgid "Operating Systems"
 msgstr "Betriebssysteme"
 
-#: templates/resume.template.html:26
+#: templates/resume.template.html:53
 msgid "Programming languages"
 msgstr "Programmiersprachen"
 
-#: templates/resume.template.html:35
+#: templates/resume.template.html:62
 msgid "Computational Visualistics and Design"
 msgstr "Computervisualistik und Design"
 
-#: templates/resume.template.html:37
+#: templates/resume.template.html:64
 msgid "Oct. 2013 - Oct. 2017"
 msgstr "Okt. 2013 - Okt. 2017"
 
-#: templates/resume.template.html:38
+#: templates/resume.template.html:65
 msgid "Hamm-Lippstadt University of Applied Sciences"
 msgstr "Hochschule Hamm-Lippstadt"
 
-#: templates/resume.template.html:47
+#: templates/resume.template.html:74
 msgid ""
 "Foundations of Computer science (algorithms, data structures, software "
 "design patterns), computer vision and computer graphics"
@@ -848,27 +925,27 @@ msgstr ""
 "Grundlagen der Informatik (Algorithmen, Datenstrukturen, Entwurfsmuster "
 "der Softwarearchitektur), Bildverarbeitung und Computergrafik"
 
-#: templates/resume.template.html:49
+#: templates/resume.template.html:76
 msgid "ergonomics"
 msgstr "Ergonomie"
 
-#: templates/resume.template.html:49
+#: templates/resume.template.html:76
 msgid "web design"
 msgstr "Webentwicklung"
 
-#: templates/resume.template.html:52
+#: templates/resume.template.html:79
 msgid "Main programming language"
 msgstr "Meistgenutzte Programmiersprache"
 
-#: templates/resume.template.html:61
+#: templates/resume.template.html:88
 msgid "abitur-desc"
 msgstr " "
 
-#: templates/resume.template.html:73
+#: templates/resume.template.html:100
 msgid "Internships"
 msgstr "Praktika"
 
-#: templates/resume.template.html:86
+#: templates/resume.template.html:113
 msgid ""
 "Work on two much-rewarded service robots as part of a research internship"
 " in a team of nine students and two research assistants."
@@ -877,7 +954,7 @@ msgstr ""
 "Studierenden und zwei wiss. Mitarbeitern um die Arbeit an zwei "
 "Servicerobotern, die bereits mehrere Auszeichnungen erhalten haben."
 
-#: templates/resume.template.html:89
+#: templates/resume.template.html:116
 msgid ""
 "Implementation of human-robot-interactions in the context of home "
 "assistance, such as people tracking & following and item retrieval, "
@@ -891,19 +968,19 @@ msgstr ""
 "Wettkampfszenarien nachgestellt (beide Wettkämpfe leider aufgrund der "
 "Pandemie abgesagt)"
 
-#: templates/resume.template.html:92
+#: templates/resume.template.html:119
 msgid "Special team role: Quality Management"
 msgstr "Teamfunktion: Qualitätsmanagement"
 
-#: templates/resume.template.html:94
+#: templates/resume.template.html:121
 msgid "Verification of compliance of coding standards and style guides"
 msgstr "Verifizierung der Einhaltung von Coding-Standards und Style-Guides"
 
-#: templates/resume.template.html:95
+#: templates/resume.template.html:122
 msgid "Writing of documentations"
 msgstr "Schreiben von Dokumentationen"
 
-#: templates/resume.template.html:97
+#: templates/resume.template.html:124
 msgid ""
 "Conduction and supervision of tests according to official tournament "
 "rules and ratings"
@@ -911,7 +988,7 @@ msgstr ""
 "Durchführung und Beaufsichtigung von Tests basierend auf offiziellen "
 "Turnierregeln und Bewertungstabellen"
 
-#: templates/resume.template.html:111
+#: templates/resume.template.html:138
 msgid ""
 "Development of a mockup / prototype for a driver assistance / "
 "recommendation system"
@@ -919,7 +996,7 @@ msgstr ""
 "Entwicklung eines Prototypen für ein Fahrerassistenzsystem / "
 "Empfehlungssystem"
 
-#: templates/resume.template.html:112
+#: templates/resume.template.html:139
 msgid ""
 "Work with C++ and Bash-Shell on Ubuntu, compilation for target "
 "infotainment system hardware"
@@ -927,55 +1004,89 @@ msgstr ""
 "Arbeit mit C++ und Bash unter Ubuntu, Kompilierung und Ausführung direkt "
 "auf Zielhardware / Infotainmentsystem"
 
-#: templates/resume.template.html:113
+#: templates/resume.template.html:140
 msgid "Git, Jira for version control, project management"
 msgstr "Git, Jira für Versionskontrolle, Projektmanagement"
 
-#: templates/resume.template.html:114
+#: templates/resume.template.html:141
 msgid "Close coordination with team in India"
 msgstr "Enge Zusammenarbeit mit Team in Indien"
 
-#: templates/resume.template.html:115
+#: templates/resume.template.html:142
 msgid "Setup and assistance at exhibitions"
 msgstr "Aufbau und Assistenz auf Ausstellungen"
 
-#: templates/resume.template.html:116
+#: templates/resume.template.html:143
 msgid "Daily stand-up meetings in small team to discuss progress"
 msgstr "Tägliche Stand-up-meetings in kleinem Team, um Fortschritt zu besprechen"
 
-#: templates/resume.template.html:123
+#: templates/resume.template.html:150
+msgid "Publications"
+msgstr "Publikationen"
+
+#: templates/resume.template.html:161
+msgid ""
+"Publication based on by master thesis in DAGM GCPR 2021 and release of "
+"the source code on GitHub"
+msgstr ""
+"Publikation basierend auf meiner Masterarbeit in DAGM GCPR 2021 und "
+"Veröffentlichung des Quellcodes"
+
+#: templates/resume.template.html:168
+msgid "Certificates"
+msgstr "Zertifikate"
+
+#: templates/resume.template.html:172
+msgid "iSAQB Certified Professional for Software Architecture"
+msgstr ""
+
+#: templates/resume.template.html:178
+msgid "Certification for software archicture foundation level"
+msgstr "Auszeichnung zum Softwarearchitekten Foundation Level"
+
+#: templates/resume.template.html:180
+msgid "Identification of software architecture requirements and goals"
+msgstr "Identifizierung von Softwarearchitekturanforderungen und -zielen"
+
+#: templates/resume.template.html:181
+msgid "Identification of non-functional requirements"
+msgstr "Identifizierung von nicht-funktionalen Anforderungen und Qualitätszielen"
+
+#: templates/resume.template.html:182
+msgid "Design of software components as well as their interfaces and dependencies"
+msgstr ""
+"Entwurf von Softwarekomponenten sowie deren Schnittstellen und "
+"Abhängigkeiten"
+
+#: templates/resume.template.html:183
+msgid "Documentation and communication of software architectures"
+msgstr "Dokumentation und Kommunikation von Softwarearchitekturen"
+
+#: templates/resume.template.html:190
 msgid "Skills"
 msgstr "Kenntnisse"
 
-#: templates/resume.template.html:127
+#: templates/resume.template.html:194
 msgid "Most used programming languages / technologies"
 msgstr "Meistgenutzte Programmiersprachen und Technologien"
 
-#: templates/resume.template.html:132
-msgid "incl. and preferably modern C++ 17 and 20"
-msgstr "inkl. und vorzugsweise modernes C++ 17 und 20"
+#: templates/resume.template.html:199
+msgid "incl. and preferably modern C++ 17 or newer"
+msgstr "inkl. und vorzugsweise modernes C++ 17 oder neuer"
 
-#: templates/resume.template.html:142
+#: templates/resume.template.html:209
 msgid "Spoken languages"
 msgstr "Gesprochene Sprachen"
 
-#: templates/resume.template.html:147
+#: templates/resume.template.html:214
 msgid "German (native)"
 msgstr "Deutsch (Muttersprache)"
 
-#: templates/resume.template.html:149
-msgid ""
-"English (fluent)<br>Written english master thesis + seminar work / "
-"presentations + Bosch internship"
-msgstr ""
-"Englisch (fließend)<br>Englische Masterarbeit + Seminararbeiten und "
-"-präsentationen + Bosch Praktikum"
+#: templates/resume.template.html:216
+msgid "English (fluent)"
+msgstr "Englisch (fließend)"
 
-#: templates/resume.template.html:151
-msgid "Japanese as a hobby (so far only basic/interm. reading)"
-msgstr "Japanisch als Hobby (bisher nur einfache/intermediäre Lesekenntnisse)"
-
-#: templates/resume.template.html:156
+#: templates/resume.template.html:223
 msgid "See some of my recent work"
 msgstr "Zu meinen aktuellen Projekten"
 
@@ -1059,4 +1170,19 @@ msgstr "Zu meinen aktuellen Projekten"
 
 #~ msgid "Contact"
 #~ msgstr "Kontakt"
+
+#~ msgid "Feel free to contact me"
+#~ msgstr "Gerne können Sie mich kontaktieren"
+
+#~ msgid ""
+#~ "English (fluent)<br>Written english master "
+#~ "thesis + seminar work / presentations"
+#~ " + Bosch internship"
+#~ msgstr ""
+#~ "Englisch (fließend)<br>Englische Masterarbeit + "
+#~ "Seminararbeiten und -präsentationen + Bosch"
+#~ " Praktikum"
+
+#~ msgid "Japanese as a hobby (so far only basic/interm. reading)"
+#~ msgstr "Japanisch als Hobby (bisher nur einfache/intermediäre Lesekenntnisse)"
 
